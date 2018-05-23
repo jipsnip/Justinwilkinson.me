@@ -1,0 +1,376 @@
+:local(.carouselContainer) {
+    width: 100%;
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+    overflow: visible;
+    height: 560px;
+    min-width: 550px;
+    cursor: pointer;
+}
+
+:local(.carouselContainer:before), :local(.carouselContainer:after) {
+    content: '';
+    background: transparent url('../../images/rsSprites.png') no-repeat 0 -245px;
+    width: 175px;
+    height: 56px;
+    position: absolute;
+    z-index: 4;
+    bottom: -20px;
+}
+
+:local(.carouselContainer:after) {
+    transform: scaleX(-1);
+    right: 0;
+}
+
+:local(.carouselContent) {
+    margin: 0;
+    padding: 0;
+}
+
+:local(.carouselContent li) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+:local(.carouselContent li.current) {
+    top: 0;
+    z-index: 2;
+    opacity: 1;
+}
+
+:local(.carouselContent li a img) {
+    position: relative;
+    left: 50%;
+    margin-left: -1050px;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+:local(.carouselContent li a img.opaque) {
+    opacity: 1;
+}
+
+:local(.carouselContent li a img.transparent) {
+    opacity: 0;
+}
+
+:local(.rightArrow), :local(.leftArrow) {
+    position: absolute;
+    top: 205px;
+    width: 69px;
+    height: 77px;
+    display: block;
+    background: transparent url('../../images/rsSprites.png') no-repeat -72px -305px;
+    z-index: 4;
+}
+
+:local(.rightArrow) {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: 0;
+}
+
+:local(.leftArrow) {
+    left: 0;
+}
+
+:local(.rightArrow:hover), :local(.leftArrow:hover) {
+    background-position: -152px -305px;
+    top: 205px;
+    cursor: pointer;
+}
+
+:local(.runescapeCarouselSwitcher) {
+    position: relative;
+    background: transparent url('../../images/rsSprites.png') no-repeat center -384px;
+    height: 34px;
+    z-index: 10;
+    list-style: none;
+    top: 462px;
+    text-align: center;
+    padding: 6px 0 0 0;
+    margin: 0;
+}
+
+:local(.runescapeCarouselSwitcher li) {
+    display: inline-block;
+    margin: 6px -3px;
+}
+
+:local(.runescapeCarouselSwitcher li a) {
+    background: transparent url('../../images/rsSprites.png') no-repeat -69px 0;
+    display: block;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    margin: 0 -3px;
+    cursor: pointer;
+}
+
+:local(.runescapeCarouselSwitcher li a.activeSwitcher) {
+    background-position: -69px -40px;
+}
+
+@media screen and (min-width: 600px) {
+    :local(.carouselContainer) {
+        width: 100%;
+        clear: both;
+        position: relative;
+        margin: 0 auto;
+        overflow: visible;
+        height: 560px;
+        min-width: 600px;
+        cursor: pointer;
+    }
+
+    :local(.carouselContainer:before), :local(.carouselContainer:after) {
+        content: '';
+        background: transparent url('../../images/rsSprites.png') no-repeat 0 -245px;
+        width: 175px;
+        height: 56px;
+        position: absolute;
+        z-index: 4;
+        bottom: -20px;
+    }
+
+    :local(.carouselContainer:after) {
+        transform: scaleX(-1);
+        right: 0;
+    }
+
+    :local(.carouselContent) {
+        margin: 0;
+        padding: 0;
+    }
+
+    :local(.carouselContent li) {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        list-style: none;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    :local(.carouselContent li.current) {
+        top: 0;
+        z-index: 2;
+        opacity: 1;
+    }
+
+    :local(.carouselContent li a img) {
+        position: relative;
+        left: 50%;
+        margin-left: -1000px;
+        opacity: 0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+    }
+
+    :local(.carouselContent li a img.opaque) {
+        opacity: 1;
+    }
+
+    :local(.carouselContent li a img.transparent) {
+        opacity: 0;
+    }
+
+    :local(.rightArrow), :local(.leftArrow) {
+        position: absolute;
+        top: 205px;
+        width: 69px;
+        height: 77px;
+        display: block;
+        background: transparent url('../../images/rsSprites.png') no-repeat -72px -305px;
+        z-index: 4;
+    }
+
+    :local(.rightArrow) {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        right: 0;
+    }
+
+    :local(.leftArrow) {
+        left: 0;
+    }
+
+    :local(.rightArrow:hover), :local(.leftArrow:hover) {
+        background-position: -152px -305px;
+        top: 205px;
+        cursor: pointer;
+    }
+
+    :local(.runescapeCarouselSwitcher) {
+        position: relative;
+        background: transparent url('../../images/rsSprites.png') no-repeat center -384px;
+        height: 34px;
+        z-index: 10;
+        list-style: none;
+        top: 462px;
+        text-align: center;
+        padding: 6px 0 0 0;
+        margin: 0;
+    }
+
+    :local(.runescapeCarouselSwitcher li) {
+        display: inline-block;
+        margin: 6px -3px;
+    }
+
+    :local(.runescapeCarouselSwitcher li a) {
+        background: transparent url('../../images/rsSprites.png') no-repeat -69px 0;
+        display: block;
+        width: 36px;
+        height: 36px;
+        overflow: hidden;
+        margin: 0 -3px;
+        cursor: pointer;
+    }
+
+    :local(.runescapeCarouselSwitcher li a.activeSwitcher) {
+        background-position: -69px -40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.carouselContainer) {
+        width: 100%;
+        min-width: 1300px;
+        clear: both;
+        position: relative;
+        margin: 0 auto;
+        overflow: visible;
+        height: 560px;
+        cursor: pointer;
+    }
+
+    :local(.carouselContainer:before), :local(.carouselContainer:after) {
+        content: '';
+        background: transparent url('../../images/rsSprites.png') no-repeat 0 -245px;
+        width: 175px;
+        height: 56px;
+        position: absolute;
+        z-index: 4;
+        bottom: -20px;
+    }
+
+    :local(.carouselContainer:after) {
+        transform: scaleX(-1);
+        right: 0;
+    }
+
+    :local(.carouselContent) {
+        margin: 0;
+        padding: 0;
+    }
+
+    :local(.carouselContent li) {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background: #01070d;
+        list-style: none;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    :local(.carouselContent li.current) {
+        top: 0;
+        z-index: 2;
+        opacity: 1;
+    }
+
+    :local(.carouselContent li a img) {
+        position: relative;
+        left: 50%;
+        margin-left: -970px;
+        opacity: 0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+    }
+
+    :local(.carouselContent li a img.opaque) {
+        opacity: 1;
+    }
+
+    :local(.carouselContent li a img.transparent) {
+        opacity: 0;
+    }
+
+    :local(.rightArrow), :local(.leftArrow) {
+        position: absolute;
+        top: 205px;
+        width: 69px;
+        height: 77px;
+        display: block;
+        background: transparent url('../../images/rsSprites.png') no-repeat -72px -305px;
+        z-index: 4;
+    }
+
+    :local(.rightArrow) {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        right: 0;
+    }
+
+    :local(.leftArrow) {
+        left: 0;
+    }
+
+    :local(.rightArrow:hover), :local(.leftArrow:hover) {
+        background-position: -152px -305px;
+        top: 205px;
+        cursor: pointer;
+    }
+
+    :local(.runescapeCarouselSwitcher) {
+        position: relative;
+        background: transparent url('../../images/rsSprites.png') no-repeat center -384px;
+        height: 34px;
+        z-index: 10;
+        list-style: none;
+        top: 462px;
+        text-align: center;
+        padding: 6px 0 0 0;
+        margin: 0;
+    }
+
+    :local(.runescapeCarouselSwitcher li) {
+        display: inline-block;
+        margin: 6px -3px;
+    }
+
+    :local(.runescapeCarouselSwitcher li a) {
+        background: transparent url('../../images/rsSprites.png') no-repeat -69px 0;
+        display: block;
+        width: 36px;
+        height: 36px;
+        overflow: hidden;
+        margin: 0 -3px;
+        cursor: pointer;
+    }
+
+    :local(.runescapeCarouselSwitcher li a.activeSwitcher) {
+        background-position: -69px -40px;
+    }
+}

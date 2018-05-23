@@ -1,0 +1,2421 @@
+:local(.homeNavBarContainer) {
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    clear: both;
+    max-height: 60px;
+    width: calc(100% - 10px);
+    min-width: 540px;
+    padding-left: 10px;
+    z-index: 1000;
+    background: #e8e8e8;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4)
+}
+
+:local(.navBarContainer) {
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    clear: both;
+    max-height: 60px;
+    width: calc(100% - 10px);
+    min-width: 540px;
+    padding-left: 10px;
+    background: url('../../images/navigationBackgroundSet.jpg') no-repeat left top,
+    url('../../images/navigationBackgroundSet.jpg') no-repeat right center,
+    url('../../images/navigationBackgroundSet.jpg') repeat-x center bottom;
+    z-index: 1000;
+    box-shadow: 0 2px 3px black;
+}
+
+:local(.leagueNavBarContainer) {
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    clear: both;
+    padding-left: 10px;
+    max-height: 60px;
+    min-width: 540px;
+    width: calc(100% - 10px);
+    background: #121212;
+    border-bottom: 2px solid #262626;
+    z-index: 1000;
+    box-shadow: 0 2px 3px black;
+}
+
+:local(.twitchNavBarContainer) {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    clear: both;
+    max-height: 60px;
+    min-width: 490px;
+    padding-left: 10px;
+    width: calc(100% - 10px);
+    background: #392e5c;
+    z-index: 1000;
+    box-shadow: 0 2px 3px black;
+}
+
+:local(.navigationLogo){
+    display: inline-block;
+    position: absolute;
+    z-index: 2000;
+    left: 60px;
+    height: 50px;
+    top: 6px;
+}
+
+:local(.twitchNavigationLogo){
+    display: inline-block;
+    position: absolute;
+    z-index: 2000;
+    left: 60px;
+    height: 50px;
+    top: 6px;
+}
+
+:local(.leagueNavigationLogo){
+    display: inline-block;
+    position: absolute;
+    z-index: 2000;
+    left: 60px;
+    height: 50px;
+    top: 6px;
+}
+
+:local(.homeNavigationLogo){
+    display: inline-block;
+    position: absolute;
+    z-index: 2000;
+    left: 60px;
+    height: 50px;
+    top: 6px;
+}
+
+:local(.activationNavBarContainer) {
+    display: none;
+}
+
+:local(.navBar) {
+    display: table-cell;
+    color: #e1bb34;
+    z-index: 1001;
+}
+
+:local(.homeNavBar){
+    display: table-cell;
+    color: black;
+    z-index: 1001;
+}
+
+:local(.leagueNavBar) {
+    display: table-cell;
+    color: #c9aa71;
+    font-family: "BeaufortLoL", "Times New Roman", "serif";
+    font-weight: 700;
+    z-index: 1001;
+}
+
+:local(.twitchNavBar) {
+    display: table-cell;
+    color: #b19dd8;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-weight: 700;
+    z-index: 1001;
+}
+
+:local(.navList) {
+    display: none;
+}
+
+:local(.homeNavList){
+    display: none;
+}
+
+:local(.leagueNavList) {
+    display: none;
+}
+
+:local(.twitchNavList) {
+    display:  none;
+}
+
+:local(.dropdownButton:link), :local(.dropdownButton:visited) {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+:local(.homeDropdownButton:link), :local(.homeDropdownButton:visited) {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+:local(.leagueDropdownButton:link), :local(.leagueDropdownButton:visited) {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+:local(.twitchDropdownButton:link), :local(.twitchDropdownButton:visited) {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+:local(.dropdownExpander) {
+    border-color: transparent transparent transparent #d7dbe1;
+    border-style: solid;
+    content: '';
+    border-width: 5px 6px;
+    display: inline-block;
+    z-index: 1002;
+    position: absolute;
+    left: 120px;
+    top: 22px;
+}
+
+:local(.homeDropdownExpander) {
+    border-color: transparent transparent transparent black;
+    border-style: solid;
+    content: '';
+    border-width: 5px 6px;
+    display: inline-block;
+    z-index: 1002;
+    position: absolute;
+    left: 120px;
+    top: 22px;
+}
+
+:local(.hoveredDropdownExpander) {
+    border-color: transparent transparent transparent #e1bb34;
+    border-style: solid;
+    content: '';
+    border-width: 5px 6px;
+    display: inline-block;
+    z-index: 1002;
+    position: absolute;
+    left: 120px;
+    top: 22px;
+}
+
+:local(.homeHoveredDropdownExpander) {
+    border-color: transparent transparent transparent #ff8d40;
+    border-style: solid;
+    content: '';
+    border-width: 5px 6px;
+    display: inline-block;
+    z-index: 1002;
+    position: absolute;
+    left: 120px;
+    top: 22px;
+}
+
+:local(.leagueDropdownExpander){
+    border-color: transparent transparent transparent #f1e6d0;
+    border-style: solid;
+    content: '';
+    border-width: 5px 6px;
+    display: inline-block;
+    z-index: 1002;
+    position: absolute;
+    left: 120px;
+    top: 22px;
+}
+
+:local(.leagueHoveredDropdownExpander){
+    border-color: transparent transparent transparent #c9aa71;
+    border-style: solid;
+    content: '';
+    border-width: 5px 6px;
+    display: inline-block;
+    z-index: 1002;
+    position: absolute;
+    left: 120px;
+    top: 22px;
+}
+
+:local(.twitchHoveredDropdownExpander) {
+    border-color: transparent transparent transparent #ffffff;
+    border-style: solid;
+    content: '';
+    border-width: 5px 6px;
+    display: inline-block;
+    z-index: 1002;
+    position: absolute;
+    left: 120px;
+    top: 12px;
+}
+
+:local(.twitchDropdownExpander) {
+    border-color: transparent transparent transparent #b19dd8;
+    border-style: solid;
+    content: '';
+    border-width: 5px 6px;
+    display: inline-block;
+    z-index: 1002;
+    position: absolute;
+    left: 120px;
+    top: 12px;
+}
+
+:local(.navLink) {
+    text-decoration: none;
+    color: #d7dbe1;
+    display: block;
+    cursor: pointer;
+    border-bottom: 1px solid #1e313c;
+    text-align: left;
+    padding: 12px 10px 8px;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+:local(.navLink:hover) {
+    color: #e1bb34;
+}
+
+:local(.homeNavLink) {
+    text-decoration: none;
+    color: black;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    padding: 12px 10px 8px;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+:local(.homeNavLink:hover) {
+    color: #ff8d40;
+}
+
+:local(.leagueNavLink) {
+    text-decoration: none;
+    color: #c9aa71;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    padding: 12px 10px 8px;
+    font-size: .8rem;
+    font-weight: 700;
+    border: 1px solid #262626;
+}
+
+:local(.leagueNavLink:hover) {
+    color: #f1e6d0;
+}
+
+:local(.twitchNavLink) {
+    text-decoration: none;
+    color: #b19dd8;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    padding: 2px 0 0 10px;
+    font-size: .8rem;
+    font-weight: 700;
+    border-right: 2px solid #b19dd8;
+}
+
+:local(.twitchNavLink:hover) {
+    color: #ffffff;
+    background: #b19dd8;
+}
+
+:local(.mobileNavContainer){
+    display: block;
+    height: 60px;
+    width: 40px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+:local(.generalTrigram){
+    color: #e1bb34;
+    font-size: 2rem;
+    padding-top: 6px;
+    height: 60px;
+}
+
+:local(.homeTrigram){
+    color: black;
+    font-size: 2rem;
+    padding-top: 6px;
+    height: 60px;
+}
+
+:local(.twitchTrigram){
+    color: #b19dd8;
+    font-size: 2rem;
+    padding-top: 6px;
+    height: 60px;
+}
+
+:local(.leagueTrigram){
+    color: #c9aa71;
+    font-size: 2rem;
+    padding-top: 6px;
+    height: 60px;
+}
+
+:local(.generalDropdown) {
+    display: block;
+    min-width: 150px;
+    max-width: 150px;
+    text-align: center;
+    background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1002;
+    line-height: 30px;
+    position: absolute;
+    left: -1px;
+    top: 60px;
+    border: 1px solid #39444b;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.homeDropdown) {
+    display: block;
+    min-width: 150px;
+    max-width: 150px;
+    text-align: center;
+    z-index: 1002;
+    line-height: 30px;
+    position: absolute;
+    left: -1px;
+    top: 60px;
+    background: #e8e8e8;
+    border-left: 1px solid black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.leagueDropdown) {
+    display: block;
+    min-width: 150px;
+    max-width: 150px;
+    text-align: center;
+    background: #121212;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 993;
+    line-height: 30px;
+    position: absolute;
+    left: -1px;
+    top: 60px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.twitchDropdown) {
+    display: block;
+    min-width: 150px;
+    max-width: 150px;
+    text-align: center;
+    background: #201c2b;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    inset -2px 3px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1002;
+    line-height: 30px;
+    position: absolute;
+    left: -1px;
+    top: 60px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.dropdownItem) {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.homeDropdownItem) {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.leagueDropdownItem) {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.twitchDropdownItem) {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.expandedDropdownItem) {
+    position: relative;
+    width: 150px;
+    max-height: 51px;
+    background: inherit;
+}
+
+:local(.expandedDropdownItem:hover) {
+    position: relative;
+    width: 300px;
+    max-height: 51px;
+    overflow: visible;
+}
+
+:local(.subDropdown) {
+     display: block;
+     width: 50%;
+     float: right;
+     min-width: 150px;
+     background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+     z-index: 993;
+     line-height: 30px;
+     position: absolute;
+     right: -1px;
+     top: -1px;
+     border: 1px solid #39444b;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+:local(.homeSubDropdown) {
+    display: block;
+    width: 50%;
+    float: right;
+    min-width: 150px;
+    z-index: 993;
+    line-height: 30px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    background: #e8e8e8;
+    border-left: 1px solid black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.leagueSubDropdown) {
+    display: block;
+    width: 50%;
+    float: right;
+    min-width: 150px;
+    background: #121212;
+    border: 1px solid #262626;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 993;
+    line-height: 30px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.twitchSubDropdown) {
+    display: block;
+    width: 50%;
+    float: right;
+    min-width: 150px;
+    background: #201c2b;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 993;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    top: -1px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+:local(.loginList) {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 35px;
+    top: 0;
+    list-style: none;
+    display: flex;
+    height: 60px;
+    border-right: 1px solid #39444b;
+    border-left: 1px solid black;
+}
+
+:local(.loginList li) {
+    display: inline-block;
+    padding: 0 12px;
+    cursor: pointer;
+    border-left: 1px solid #39444b;
+    border-right: 1px solid black;
+    background-image: url('../../images/navigationBackground.jpg');
+}
+
+:local(.loginList li:hover) {
+    color: #fff2c5;
+    background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+    box-shadow: inset 0 0 8px 3px black;
+}
+
+:local(.loginLabel) {
+    padding-top: 22px;
+    margin: 0;
+}
+
+:local(.homeLoginList) {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 35px;
+    top: 0;
+    list-style: none;
+    display: flex;
+    height: 60px;
+    border-left: 1px solid black;
+}
+
+:local(.homeLoginList li) {
+    display: inline-block;
+    padding: 0 12px;
+    cursor: pointer;
+    border-right: 1px solid black;
+}
+
+:local(.homeLoginList li:hover) {
+    color: #ff8d40;
+}
+
+:local(.homeLoginLabel) {
+    padding-top: 20px;
+    margin: 0;
+}
+
+:local(.twitchLoginList) {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 35px;
+    top: 0;
+    list-style: none;
+    display: flex;
+    border-left: 1px solid #b19dd8;
+    height: 60px;
+}
+
+:local(.twitchLoginList li) {
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+    border-right: 1px solid #b19dd8;
+}
+
+:local(.twitchLoginList li:hover) {
+    color: white;
+    text-decoration: underline;
+}
+
+:local(.twitchLoginLabel) {
+    padding: 21px 10px 0 10px;
+    margin: 0;
+}
+
+:local(.leagueLoginList) {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 35px;
+    top: 12px;
+    list-style: none;
+    display: flex;
+}
+
+:local(.leagueLoginList li) {
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+}
+
+:local(.leagueLoginList li:before) {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 1px;
+    position: absolute;
+    top: 10px;
+    background-color: #c9aa71;
+}
+
+:local(.leagueLoginList li:hover) {
+    color: #f1e6d0;
+}
+
+:local(.leagueLoginLabel) {
+    padding: 12px 10px 0 10px;
+    margin: 0;
+}
+
+@media screen and (min-width: 600px){
+    :local(.navBarContainer) {
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        clear: both;
+        max-height: 60px;
+        min-width: 540px;
+        width: calc(100% - 60px);
+        padding-left: 60px;
+        background: url('../../images/navigationBackgroundSet.jpg') no-repeat left top,
+        url('../../images/navigationBackgroundSet.jpg') no-repeat right center,
+        url('../../images/navigationBackgroundSet.jpg') repeat-x center bottom;
+        z-index: 1000;
+        box-shadow: 0 2px 3px black;
+    }
+
+    :local(.homeNavBarContainer) {
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        clear: both;
+        max-height: 60px;
+        min-width: 540px;
+        width: calc(100% - 60px);
+        padding-left: 60px;
+        z-index: 1000;
+        background: #e8e8e8;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4)
+    }
+
+    :local(.leagueNavBarContainer) {
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        clear: both;
+        padding-left: 60px;
+        max-height: 60px;
+        min-width: 590px;
+        width: calc(100% - 60px);
+        background: #121212;
+        border-bottom: 2px solid #262626;
+        z-index: 1000;
+        box-shadow: 0 2px 3px black;
+    }
+
+    :local(.twitchNavBarContainer) {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        clear: both;
+        max-height: 60px;
+        padding-left: 80px;
+        min-width: 670px;
+        width: calc(100% - 80px);
+        background: #392e5c;
+        z-index: 1000;
+        box-shadow: 0 2px 3px black;
+    }
+
+    :local(.navigationLogo){
+        display: inline-block;
+        position: absolute;
+        z-index: 2000;
+        left: -1px;
+        height: 50px;
+        top: 6px;
+    }
+
+    :local(.homeNavigationLogo){
+        display: inline-block;
+        position: absolute;
+        z-index: 2000;
+        left: -1px;
+        height: 50px;
+        top: 6px;
+    }
+
+    :local(.twitchNavigationLogo){
+        display: inline-block;
+        position: absolute;
+        z-index: 2000;
+        left: 10px;
+        height: 50px;
+        top: 6px;
+    }
+
+    :local(.leagueNavigationLogo){
+        display: inline-block;
+        position: absolute;
+        z-index: 2000;
+        left: 5px;
+        height: 50px;
+        top: 6px;
+    }
+
+    :local(.activationNavBarContainer) {
+        display: none;
+    }
+
+    :local(.mobileNavContainer){
+        display:  none;
+    }
+
+    :local(.navBar) {
+        display: table-cell;
+        color: #e1bb34;
+        z-index: 1001;
+        border-right: 1px solid #39444b;
+        border-left: 1px solid black;
+    }
+
+    :local(.homeNavBar) {
+        display: table-cell;
+        color: black;
+        z-index: 1001;
+    }
+
+    :local(.leagueNavBar) {
+        display: table-cell;
+        color: #c9aa71;
+        font-family: "BeaufortLoL", "Times New Roman", "serif";
+        font-weight: 700;
+        z-index: 1001;
+    }
+
+    :local(.twitchNavBar) {
+        display: table-cell;
+        color: #b19dd8;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+        font-weight: 700;
+        z-index: 1001;
+    }
+
+    :local(.navList) {
+         list-style: none;
+         width: 100%;
+         background: transparent;
+         display: block;
+         overflow: visible;
+         margin: 0;
+         height: 60px;
+         padding: 0;
+     }
+
+    :local(.homeNavList) {
+        list-style: none;
+        width: 100%;
+        background: transparent;
+        display: block;
+        overflow: visible;
+        margin: 0;
+        height: 60px;
+        padding: 0;
+        border-left: 1px solid black;
+    }
+
+    :local(.leagueNavList) {
+        list-style: none;
+        width: 100%;
+        background: transparent;
+        display: block;
+        overflow: visible;
+        margin: 0;
+        height: 60px;
+        padding: 0;
+    }
+
+    :local(.twitchNavList) {
+        list-style: none;
+        width: 100%;
+        background: transparent;
+        display: block;
+        overflow: visible;
+        margin: 0;
+        height: 60px;
+        padding: 0;
+    }
+
+    :local(.dropdownButton:link), :local(.dropdownButton:visited) {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    :local(.homeDropdownButton:link), :local(.homeDropdownButton:visited) {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    :local(.leagueDropdownButton:link), :local(.leagueDropdownButton:visited) {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    :local(.twitchDropdownButton:link), :local(.twitchDropdownButton:visited) {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    :local(.navExpander) {
+        border-color: #e1bb34 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.homeNavExpander) {
+        border-color: black transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.hoveredNavExpander) {
+        border-color: #fff2c5 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.homeHoveredNavExpander) {
+        border-color: #ff8d40 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.leagueNavExpander) {
+        border-color: #c9aa71 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.hoveredLeagueNavExpander) {
+        border-color: #f1e6d0 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.twitchNavExpander) {
+        border-color: #b19dd8 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.hoveredTwitchNavExpander) {
+        border-color: white transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 21px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.dropdownExpander) {
+        border-color: transparent transparent transparent #d7dbe1;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 22px;
+    }
+
+    :local(.hoveredDropdownExpander) {
+        border-color: transparent transparent transparent #e1bb34;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 22px;
+    }
+
+    :local(.homeDropdownExpander) {
+        border-color: transparent transparent transparent black;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 22px;
+    }
+
+    :local(.homeHoveredDropdownExpander) {
+        border-color: transparent transparent transparent #ff8d40;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 22px;
+    }
+
+    :local(.twitchHoveredDropdownExpander) {
+        border-color: transparent transparent transparent #ffffff;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 12px;
+    }
+
+    :local(.twitchDropdownExpander) {
+        border-color: transparent transparent transparent #b19dd8;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 12px;
+    }
+
+    :local(.navItem) {
+        position: relative;
+        list-style: none;
+        font-size: .9rem;
+        text-transform: uppercase;
+        padding: 2px 12px 0 12px;
+        float: left;
+        line-height: 58px;
+        display: block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        border-left: 1px solid #39444b;
+        border-right: 1px solid black;
+        background-image: url('../../images/navigationBackground.jpg');
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.homeNavItem) {
+        position: relative;
+        list-style: none;
+        font-size: .9rem;
+        text-transform: uppercase;
+        padding: 2px 12px 0 12px;
+        float: left;
+        line-height: 58px;
+        display: block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        z-index: 1002;
+        cursor: pointer;
+        border-right: 1px solid black;
+    }
+
+    :local(.leagueNavItem) {
+        position: relative;
+        list-style: none;
+        font-size: .9rem;
+        text-transform: uppercase;
+        padding: 2px 12px 0 12px;
+        float: left;
+        line-height: 59px;
+        display: block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        background: #121212;
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.activeLeagueNavItem) {
+        position: relative;
+        list-style: none;
+        font-size: .9rem;
+        text-transform: uppercase;
+        padding: 2px 12px 0 12px;
+        float: left;
+        line-height: 59px;
+        display: block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        background: #121212;
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.activeLeagueNavItem:after) {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        bottom: -1px;
+        left: 10%;
+        background-color: #c79a3c;
+    }
+
+    :local(.twitchNavItem) {
+        position: relative;
+        list-style: none;
+        font-size: .9rem;
+        text-transform: uppercase;
+        padding: 2px 12px 0 12px;
+        float: left;
+        line-height: 59px;
+        display: block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        background: transparent;
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.activeTwitchNavItem) {
+        position: relative;
+        list-style: none;
+        font-size: .9rem;
+        text-transform: uppercase;
+        padding: 2px 12px 0 12px;
+        float: left;
+        line-height: 59px;
+        display: block;
+        color: white;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        background: transparent;
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.navItem:hover) {
+        color: #fff2c5;
+        background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+        box-shadow: inset 0 0 8px 3px black;
+    }
+
+    :local(.homeNavItem:hover) {
+        color: #ff8d40;
+    }
+
+    :local(.leagueNavItem:hover) {
+        color: #f1e6d0;
+    }
+
+    :local(.twitchNavItem:hover) {
+        color: white;
+        text-decoration: underline;
+    }
+
+    :local(.navLink) {
+        text-decoration: none;
+        color: #d7dbe1;
+        display: block;
+        cursor: pointer;
+        border-bottom: 1px solid #1e313c;
+        text-align: left;
+        padding: 12px 10px 8px;
+        font-size: .7rem;
+    }
+
+    :local(.navLink:hover) {
+        color: #e1bb34;
+    }
+
+    :local(.homeNavLink) {
+        text-decoration: none;
+        color: black;
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        padding: 12px 10px 8px;
+        font-size: .7rem;
+    }
+
+    :local(.homeNavLink:hover) {
+        color: #ff8d40;
+    }
+
+    :local(.leagueNavLink) {
+        text-decoration: none;
+        color: #c9aa71;
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        padding: 12px 10px 8px;
+        font-size: .7rem;
+        border: 1px solid #262626;
+    }
+
+    :local(.leagueNavLink:hover) {
+        color: #f1e6d0;
+    }
+
+    :local(.twitchNavLink) {
+        text-decoration: none;
+        color: #b19dd8;
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        padding: 2px 0 0 10px;
+        font-size: .7rem;
+        border-right: 2px solid #b19dd8;
+    }
+
+    :local(.twitchNavLink:hover) {
+        color: #ffffff;
+        background: #b19dd8;
+    }
+
+    :local(.generalDropdown) {
+         display: block;
+         width: 100%;
+         min-width: 200px;
+         background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+         z-index: 1002;
+         line-height: 30px;
+         position: absolute;
+         left: -1px;
+         top: 60px;
+         border: 1px solid #39444b;
+         list-style: none;
+         padding: 0;
+         margin: 0;
+     }
+
+    :local(.homeDropdown) {
+        display: block;
+        width: 100%;
+        min-width: 200px;
+        z-index: 1002;
+        line-height: 30px;
+        position: absolute;
+        left: -1px;
+        top: 60px;
+        background: #e8e8e8;
+        border: none;
+        border-left: 1px solid black;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.leagueDropdown) {
+        display: block;
+        width: 100%;
+        min-width: 200px;
+        background: #121212;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        left: -1px;
+        top: 62px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.twitchDropdown) {
+        display: block;
+        width: 100%;
+        min-width: 200px;
+        background: #201c2b;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        inset -2px 3px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1002;
+        line-height: 30px;
+        position: absolute;
+        left: -1px;
+        top: 60px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.dropdownItem) {
+         position: relative;
+         width: 100%;
+         padding: 0;
+         margin: 0;
+     }
+
+    :local(.homeDropdownItem) {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.leagueDropdownItem) {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.twitchDropdownItem) {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.expandedDropdownItem) {
+        position: relative;
+        width: 200px;
+        max-height: 51px;
+        background: inherit;
+    }
+
+    :local(.expandedDropdownItem:hover) {
+        position: relative;
+        width: 400px;
+        max-height: 51px;
+        overflow: visible;
+    }
+
+    :local(.subDropdown) {
+        display: block;
+        width: 50%;
+        float: right;
+        min-width: 200px;
+        background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        border: 1px solid #39444b;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.homeSubDropdown) {
+        display: block;
+        width: 50%;
+        float: right;
+        min-width: 200px;
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        background: #e8e8e8;
+        border: none;
+        border-left: 1px solid black;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.leagueSubDropdown) {
+        display: block;
+        width: 50%;
+        float: right;
+        min-width: 200px;
+        background: #121212;
+        border: 1px solid #262626;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.twitchSubDropdown) {
+        display: block;
+        width: 50%;
+        float: right;
+        min-width: 200px;
+        background: #201c2b;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        right: 0;
+        top: -1px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.loginList) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        list-style: none;
+        display: flex;
+        height: 60px;
+        border-right: 1px solid #39444b;
+        border-left: 1px solid black;
+        background-image: url('../../images/navigationBackground.jpg');
+    }
+
+    :local(.loginList li) {
+        display: inline-block;
+        padding: 0 12px;
+        cursor: pointer;
+        border-left: 1px solid #39444b;
+        border-right: 1px solid black;
+    }
+
+    :local(.loginList li:hover) {
+        color: #fff2c5;
+        background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+        box-shadow: inset 0 0 8px 3px black;
+    }
+
+    :local(.loginLabel) {
+        padding-top: 20px;
+        margin: 0;
+    }
+
+    :local(.homeLoginList) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        list-style: none;
+        display: flex;
+        height: 60px;
+    }
+
+    :local(.homeLoginList li) {
+        display: inline-block;
+        padding: 0 12px;
+        cursor: pointer;
+    }
+
+    :local(.homeLoginList li:hover) {
+        color: #ff8d40;
+    }
+
+    :local(.homeLoginLabel) {
+        padding-top: 22px;
+        margin: 0;
+    }
+
+    :local(.twitchLoginList) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 25px;
+        top: 0;
+        list-style: none;
+        display: flex;
+        border-left: 1px solid #b19dd8;
+        height: 60px;
+    }
+
+    :local(.twitchLoginList li) {
+        display: inline-block;
+        padding: 0;
+        cursor: pointer;
+        border-right: 1px solid #b19dd8;
+    }
+
+    :local(.twitchLoginList li:hover) {
+        color: white;
+        text-decoration: underline;
+    }
+
+    :local(.twitchLoginLabel) {
+        padding: 21px 10px 0 10px;
+        margin: 0;
+    }
+
+    :local(.leagueLoginList) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 25px;
+        top: 12px;
+        list-style: none;
+        display: flex;
+    }
+
+    :local(.leagueLoginList li) {
+        display: inline-block;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    :local(.leagueLoginList li:before) {
+        content: '';
+        display: block;
+        height: 20px;
+        width: 1px;
+        position: absolute;
+        top: 10px;
+        background-color: #c9aa71;
+    }
+
+    :local(.leagueLoginList li:hover) {
+        color: #f1e6d0;
+    }
+
+    :local(.leagueLoginLabel) {
+        padding: 12px 10px 0 10px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.navBarContainer) {
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        clear: both;
+        max-height: 59px;
+        padding-left: 70px;
+        width: calc(100% - 70px);
+        min-width: 1230px;
+        background: url('../../images/navigationBackgroundSet.jpg') no-repeat left top,
+        url('../../images/navigationBackgroundSet.jpg') no-repeat right center,
+        url('../../images/navigationBackgroundSet.jpg') repeat-x center bottom;
+        z-index: 1000;
+        box-shadow: 0 2px 3px black;
+    }
+
+    :local(.homeNavBarContainer) {
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        clear: both;
+        max-height: 59px;
+        padding-left: 70px;
+        width: calc(100% - 70px);
+        min-width: 1230px;
+        z-index: 1000;
+        background: #e8e8e8;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4)
+    }
+
+    :local(.leagueNavBarContainer) {
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        clear: both;
+        padding-left: 375px;
+        min-width: 1375px;
+        max-height: 54px;
+        width: calc(100% - 375px);
+        background: #121212;
+        border-bottom: 2px solid #262626;
+        z-index: 1000;
+        box-shadow: 0 2px 3px black;
+    }
+
+    :local(.twitchNavBarContainer) {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        clear: both;
+        min-width: 1391px;
+        max-height: 52px;
+        padding-left: 100px;
+        width: calc(100% - 100px);
+        background: #392e5c;
+        z-index: 1000;
+        box-shadow: 0 2px 3px black;
+    }
+
+    :local(.navigationLogo){
+        display: inline-block;
+        position: absolute;
+        z-index: 2000;
+        left: 0;
+        top: 0;
+        height: 60px;
+    }
+
+    :local(.homeNavigationLogo){
+        display: inline-block;
+        position: absolute;
+        z-index: 2000;
+        left: 5px;
+        top: 2px;
+        height: 56px;
+    }
+
+    :local(.twitchNavigationLogo){
+        display: inline-block;
+        position: absolute;
+        z-index: 2000;
+        left: 10px;
+        height: 50px;
+        top: 1px;
+    }
+
+    :local(.leagueNavigationLogo){
+        display: inline-block;
+        position: absolute;
+        z-index: 2000;
+        left: 10px;
+        height: 50px;
+        top: 3px;
+    }
+
+    :local(.activationNavBarContainer) {
+        display: none;
+    }
+
+    :local(.mobileNavContainer){
+        display: none;
+    }
+
+    :local(.navBar) {
+        display: table-cell;
+        color: #e1bb34;
+        z-index: 1001;
+        border-right: 1px solid #39444b;
+        border-left: 1px solid black;
+    }
+
+    :local(.homeNavBar) {
+        display: table-cell;
+        color: black;
+        z-index: 1001;
+    }
+
+    :local(.leagueNavBar) {
+        display: table-cell;
+        color: #c9aa71;
+        font-family: "BeaufortLoL", "Times New Roman", "serif";
+        font-weight: 700;
+        z-index: 1001;
+    }
+
+    :local(.twitchNavBar) {
+        display: table-cell;
+        color: #b19dd8;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+        font-weight: 700;
+        z-index: 1001;
+    }
+
+    :local(.navList) {
+        list-style: none;
+        width: 100%;
+        background: transparent;
+        display: block;
+        overflow: visible;
+        margin: 0;
+        height: 59px;
+        padding: 0;
+    }
+
+    :local(.homeNavList) {
+        list-style: none;
+        width: 100%;
+        background: transparent;
+        display: block;
+        overflow: visible;
+        margin: 0;
+        height: 59px;
+        padding: 0;
+        border-left: 1px solid black;
+    }
+
+    :local(.leagueNavList) {
+        list-style: none;
+        width: 100%;
+        background: transparent;
+        display: block;
+        overflow: visible;
+        margin: 0;
+        height: 50px;
+        padding: 0;
+    }
+
+    :local(.twitchNavList) {
+        list-style: none;
+        width: 100%;
+        background: transparent;
+        display: block;
+        overflow: visible;
+        margin: 0;
+        height: 50px;
+        padding: 0;
+    }
+
+    :local(.dropdownButton:link), :local(.dropdownButton:visited) {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    :local(.homeDropdownButton:link), :local(.homeDropdownButton:visited) {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    :local(.leagueDropdownButton:link), :local(.leagueDropdownButton:visited) {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    :local(.twitchDropdownButton:link), :local(.twitchDropdownButton:visited) {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    :local(.navExpander) {
+        border-color: #e1bb34 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 20px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.homeNavExpander) {
+        border-color: black transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 20px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.hoveredNavExpander) {
+        border-color: #fff2c5 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 20px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.homeHoveredNavExpander) {
+        border-color: #ff8d40 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 20px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.leagueNavExpander) {
+        border-color: #c9aa71 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 16px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.hoveredLeagueNavExpander) {
+        border-color: #f1e6d0 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 16px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.twitchNavExpander) {
+        border-color: #b19dd8 transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 16px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.hoveredTwitchNavExpander) {
+        border-color: white transparent transparent transparent;
+        border-style: solid;
+        content: '';
+        border-width: 6px 5px;
+        margin-left: 9px;
+        padding-top: 16px;
+        display: inline-block;
+        vertical-align: bottom;
+        z-index: 1002;
+    }
+
+    :local(.dropdownExpander) {
+        border-color: transparent transparent transparent #d7dbe1;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 22px;
+    }
+
+    :local(.hoveredDropdownExpander) {
+        border-color: transparent transparent transparent #e1bb34;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 22px;
+    }
+
+    :local(.homeDropdownExpander) {
+        border-color: transparent transparent transparent black;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 22px;
+    }
+
+    :local(.homeHoveredDropdownExpander) {
+        border-color: transparent transparent transparent #ff8d40;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 22px;
+    }
+
+    :local(.twitchHoveredDropdownExpander) {
+        border-color: transparent transparent transparent #ffffff;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 12px;
+    }
+
+    :local(.twitchDropdownExpander) {
+        border-color: transparent transparent transparent #b19dd8;
+        border-style: solid;
+        content: '';
+        border-width: 5px 6px;
+        display: inline-block;
+        z-index: 1002;
+        position: absolute;
+        left: 165px;
+        top: 12px;
+    }
+
+    :local(.navItem) {
+        position: relative;
+        list-style: none;
+        font-size: .9rem;
+        text-transform: uppercase;
+        padding: 0 20px;
+        float: left;
+        line-height: 59px;
+        display: block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        border-left: 1px solid #39444b;
+        border-right: 1px solid black;
+        background-image: url('../../images/navigationBackground.jpg');
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.homeNavItem) {
+        position: relative;
+        list-style: none;
+        font-size: .9rem;
+        text-transform: uppercase;
+        padding: 0 20px;
+        float: left;
+        line-height: 59px;
+        display: block;
+        box-sizing: border-box;
+        border-right: 1px solid black;
+        vertical-align: middle;
+        text-align: center;
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.leagueNavItem) {
+        position: relative;
+        list-style: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 2px 20px 0 20px;
+        float: left;
+        line-height: 52px;
+        display: block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        background: #121212;
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.activeLeagueNavItem) {
+        position: relative;
+        list-style: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 2px 20px 0 20px;
+        float: left;
+        line-height: 52px;
+        display: block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        background: #121212;
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.activeLeagueNavItem:after) {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        bottom: -1px;
+        left: 10%;
+        background-color: #c79a3c;
+    }
+
+    :local(.twitchNavItem) {
+        position: relative;
+        list-style: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 2px 20px 0 20px;
+        float: left;
+        line-height: 50px;
+        display: block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        background: transparent;
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.activeTwitchNavItem) {
+        position: relative;
+        list-style: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 2px 20px 0 20px;
+        float: left;
+        line-height: 50px;
+        display: block;
+        color: white;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        background: transparent;
+        z-index: 1002;
+        cursor: pointer;
+    }
+
+    :local(.navItem:hover) {
+        color: #fff2c5;
+        background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+        box-shadow: inset 0 0 8px 3px black;
+    }
+
+    :local(.homeNavItem:hover) {
+        color: #ff8d40;
+    }
+
+    :local(.leagueNavItem:hover) {
+        color: #f1e6d0;
+    }
+
+    :local(.twitchNavItem:hover) {
+        color: white;
+        text-decoration: underline;
+    }
+
+    :local(.navLink) {
+        text-decoration: none;
+        color: #d7dbe1;
+        display: block;
+        cursor: pointer;
+        border-bottom: 1px solid #1e313c;
+        text-align: left;
+        padding: 12px 10px 8px;
+        font-size: .7rem;
+    }
+
+    :local(.navLink:hover) {
+        color: #e1bb34;
+    }
+
+    :local(.homeNavLink) {
+        text-decoration: none;
+        color: black;
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        padding: 12px 10px 8px;
+        font-size: .7rem;
+    }
+
+    :local(.homeNavLink:hover) {
+        color: #ff8d40;
+    }
+
+    :local(.leagueNavLink) {
+        text-decoration: none;
+        color: #c9aa71;
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        padding: 12px 10px 8px;
+        font-size: .7rem;
+        border: 1px solid #262626;
+    }
+
+    :local(.leagueNavLink:hover) {
+        color: #f1e6d0;
+    }
+
+    :local(.twitchNavLink) {
+        text-decoration: none;
+        color: #b19dd8;
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        padding: 2px 0 0 10px;
+        font-size: .7rem;
+        border-right: 2px solid #b19dd8;
+    }
+
+    :local(.twitchNavLink:hover) {
+        color: #ffffff;
+        background: #b19dd8;
+    }
+
+    :local(.generalDropdown) {
+        display: block;
+        width: 100%;
+        min-width: 200px;
+        background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1002;
+        line-height: 30px;
+        position: absolute;
+        left: -1px;
+        top: 59px;
+        border: 1px solid #39444b;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.homeDropdown) {
+        display: block;
+        width: 100%;
+        min-width: 200px;
+        z-index: 1000;
+        line-height: 30px;
+        position: absolute;
+        left: -1px;
+        top: 59px;
+        border: none;
+        border-left: 1px solid black;
+        background: #e8e8e8;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.leagueDropdown) {
+        display: block;
+        width: 100%;
+        min-width: 200px;
+        background: #121212;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        left: -1px;
+        top: 54px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.twitchDropdown) {
+        display: block;
+        width: 100%;
+        min-width: 200px;
+        background: #201c2b;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        inset -2px 3px 0 black;
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        left: -1px;
+        top: 52px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.dropdownItem) {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.homeDropdownItem) {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.leagueDropdownItem) {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.twitchDropdownItem) {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.expandedDropdownItem) {
+        position: relative;
+        width: 200px;
+        max-height: 51px;
+        background: inherit;
+    }
+
+    :local(.expandedDropdownItem:hover) {
+        position: relative;
+        width: 400px;
+        max-height: 59px;
+        overflow: visible;
+    }
+
+    :local(.subDropdown) {
+        display: block;
+        width: 50%;
+        float: right;
+        min-width: 200px;
+        background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        border: 1px solid #39444b;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.homeSubDropdown) {
+        display: block;
+        width: 50%;
+        float: right;
+        min-width: 200px;
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        background: #e8e8e8;
+        border: none;
+        border-left: 1px solid black;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.leagueSubDropdown) {
+        display: block;
+        width: 50%;
+        float: right;
+        min-width: 200px;
+        background: #121212;
+        border: 1px solid #262626;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.twitchSubDropdown) {
+        display: block;
+        width: 50%;
+        float: right;
+        min-width: 200px;
+        background: #201c2b;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 993;
+        line-height: 30px;
+        position: absolute;
+        right: 0;
+        top: -1px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    :local(.loginList) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 35px;
+        top: 0;
+        list-style: none;
+        display: flex;
+        height: 59px;
+        border-right: 1px solid #39444b;
+        border-left: 1px solid black;
+    }
+
+    :local(.loginList li) {
+        display: inline-block;
+        padding: 18px 20px;
+        cursor: pointer;
+        border-left: 1px solid #39444b;
+        border-right: 1px solid black;
+        background: transparent url('../../images/navigationBackground.jpg');
+    }
+
+    :local(.loginList li:hover) {
+        color: #fff2c5;
+        background: transparent url('../../images/navigationItemHovered.png') no-repeat 0 0;
+        box-shadow: inset 0 0 8px 3px black;
+    }
+
+    :local(.loginLabel) {
+        padding: 4.5px 0;
+    }
+
+    :local(.homeLoginList) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 35px;
+        top: 0;
+        list-style: none;
+        display: flex;
+        height: 59px;
+        border-left: 1px solid black;
+    }
+
+    :local(.homeLoginList li) {
+        display: inline-block;
+        padding: 16px 20px;
+        cursor: pointer;
+        border-right: 1px solid black;
+    }
+
+    :local(.homeLoginList li:hover) {
+        color: #ff8d40;
+    }
+
+    :local(.homeLoginLabel) {
+        padding: 4.5px 0;
+    }
+
+    :local(.twitchLoginList) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 35px;
+        top: 0;
+        list-style: none;
+        display: flex;
+        border-left: 1px solid #b19dd8;
+        height: 52px;
+    }
+
+    :local(.twitchLoginList li) {
+        display: inline-block;
+        padding: 0;
+        cursor: pointer;
+        border-right: 1px solid #b19dd8;
+    }
+
+    :local(.twitchLoginList li:hover) {
+        color: white;
+        text-decoration: underline;
+    }
+
+    :local(.twitchLoginLabel) {
+        padding: 18px 10px;
+    }
+
+    :local(.leagueLoginList) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 35px;
+        top: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    :local(.leagueLoginList li) {
+        display: inline-block;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    :local(.leagueLoginList li:before) {
+        content: '';
+        display: block;
+        height: 20px;
+        width: 1px;
+        position: absolute;
+        top: 17px;
+        background-color: #c9aa71;
+    }
+
+    :local(.leagueLoginList li:hover) {
+        color: #f1e6d0;
+    }
+
+    :local(.leagueLoginLabel) {
+        padding: 18px 10px;
+    }
+}
+

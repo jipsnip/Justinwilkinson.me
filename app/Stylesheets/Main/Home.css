@@ -1,0 +1,71 @@
+:local(.blackBody){
+    background: #5d5d5d;
+    color: white;
+}
+
+:local(.homeWrapper){
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 200px;
+}
+
+:local(.AboutMeContainer), :local(.GoalsContainer), :local(.GamesContainer){
+    min-width: 350px;
+    width: 50%;
+}
+
+:local(.AboutMeContainer div), :local(.GoalsContainer div), :local(.GamesContainer div){
+    padding: 10px 60px;
+}
+
+:local(.AboutMeContainer h1), :local(.GoalsContainer h1), :local(.GamesContainer h1){
+    font-family: "Comic Sans MS", "fantasy";
+    padding: 0 60px;
+    text-align: center;
+}
+
+:local(.AboutMeContainer div p), :local(.GoalsContainer div p), :local(.GamesContainer div p){
+    font-size: 1.25rem;
+    line-height: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 599px){
+    :local(.homeWrapper){
+        padding: 50px 25px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+    :local(.homeWrapper){
+        padding: 50px 60px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    :local(.homeWrapper){
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 200px;
+    }
+
+    :local(.AboutMeContainer), :local(.GoalsContainer), :local(.GamesContainer){
+        min-width: 400px;
+    }
+
+    :local(.AboutMeContainer div), :local(.GoalsContainer div), :local(.GamesContainer div){
+        padding: 10px 60px;
+    }
+
+    :local(.AboutMeContainer h1), :local(.GoalsContainer h1), :local(.GamesContainer h1){
+        font-family: "Comic Sans MS", "fantasy";
+        padding: 0 60px;
+        text-align: center;
+    }
+
+    :local(.AboutMeContainer div p), :local(.GoalsContainer div p), :local(.GamesContainer div p){
+        font-size: 1.25rem;
+        line-height: 24px;
+        text-align: center;
+    }
+}

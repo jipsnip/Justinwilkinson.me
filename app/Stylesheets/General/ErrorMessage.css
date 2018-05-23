@@ -1,0 +1,14 @@
+:local(.yellowErrorMessage){
+    display: inline-block;
+    margin-left: 15px;
+    color: #FFCB05;
+    font-size: 1.05rem;
+}
+
+:local(.redErrorMessage){
+    color: red;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 1.05rem;
+}

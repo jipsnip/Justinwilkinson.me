@@ -1,0 +1,507 @@
+:local(.mainRowItem*) {
+    display: inline-block;
+}
+
+:local(.highscoreContainer) {
+    width: 100%;
+    display: inline-block;
+    float: right;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+:local(.noDisplay) {
+    display: none;
+}
+
+:local(.infoContainer) {
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto;
+    box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    background-image: url('../../images/background.png');
+}
+
+:local(.mainRowDiv) {
+    border: 1px solid #6a7382;
+    border-radius: 3px;
+    line-height: 40px;
+    background-image: url('../../images/TableMain.png');
+}
+
+:local(.mainRowDiv div) {
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    font-size: .95rem;
+    border-right: #6a7382;
+    color: #e1bb34;
+}
+
+:local(.mainRowSkill) {
+    width: 19%;
+}
+
+:local(.mainRowLevel) {
+    width: 10%;
+}
+
+:local(.mainRowExp) {
+    width: 17%;
+}
+
+:local(.mainRowRank) {
+    width: 18%;
+}
+
+:local(.mainRowDailyGainz) {
+    width: 17%;
+}
+
+:local(.mainRowYesterdaysGainz) {
+    width: 15%;
+    display: none!important;
+}
+
+:local(.mainRowWeeklyGainz) {
+    width: calc(19% - 7px);
+    border-right: none !important;
+}
+
+:local(.rowContainer) {
+    margin: 0 auto;
+    border: 1px solid #6a7382;
+}
+
+:local(.rowContainer div) {
+    display: inline-block;
+    text-align: center;
+    font-size: .9rem;
+    border-right: 1px solid #6a7382;
+    color: #e1bb34;
+}
+
+:local(.statRow) {
+    width: 18%;
+    text-transform: capitalize;
+}
+
+:local(.levelRow) {
+    width: 10%;
+}
+
+:local(.expRow) {
+    width: 17%;
+}
+
+:local(.rankRow) {
+    width: 19%;
+}
+
+:local(.DailyGainzRow) {
+    width: 17%;
+}
+
+:local(.YesterdaysGainzRow) {
+    width: 15%;
+    display: none!important;
+}
+
+:local(.WeeklyGainzRow) {
+    width: calc(19% - 7px);
+    border-right: none !important;
+}
+
+:local(.userInfoContainer) {
+    width: 200px;
+    display: none!important;
+    vertical-align: top;
+    background-image: url('../../images/UserBackground.png'), url('../../images/background.png');
+    border-radius: 3px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-left: 10px;
+    box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+:local(.highscoreUser) {
+    color: #e1bb34;
+    font-family: "cinzel", "serif";
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 1.15rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: calc(100% - 14px);
+    padding: 6px;
+}
+
+:local(.highscorePictureContainer) {
+    padding: 10px;
+}
+
+:local(.highscorePicture) {
+    width: 102px;
+    height: 102px;
+    margin: 0 auto;
+    background-image: url('../../images/RunescapeBackground.png');
+    z-index: 1;
+}
+
+:local(.highscoreUserMainDisplay) {
+    color: #e1bb34;
+    font-family: "cinzel", "serif";
+    padding-top: 4px;
+    padding-bottom: 10px;
+}
+
+:local(.highscoreUserMainDisplay div) {
+    text-align: center;
+    padding: 5px 0;
+}
+
+:local(.highscoreUserMainDisplay div img) {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+@media screen and (min-width: 600px) {
+    :local(.mainRowItem*) {
+        display: inline-block;
+    }
+
+    :local(.highscoreContainer) {
+        width: calc(100% - 20px);
+        padding: 10px;
+        display: inline-block;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+
+    :local(.noDisplay) {
+        display: none;
+    }
+
+    :local(.infoContainer) {
+        width: 100%;
+        border-radius: 4px;
+        padding: 0;
+        min-width: 0;
+        overflow: auto;
+        box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        background-image: url('../../images/background.png');
+    }
+
+    :local(.mainRowDiv) {
+        border: 1px solid #6a7382;
+        border-radius: 3px;
+        line-height: 40px;
+        background-image: url('../../images/TableMain.png');
+    }
+
+    :local(.mainRowDiv div) {
+        display: inline-block;
+        text-align: center;
+        font-weight: 600;
+        border-right: #6a7382;
+        color: #e1bb34;
+    }
+
+    :local(.mainRowSkill) {
+        width: 19%;
+    }
+
+    :local(.mainRowLevel) {
+        width: 9%;
+    }
+
+    :local(.mainRowExp) {
+        width: 18%;
+    }
+
+    :local(.mainRowRank) {
+        width: 16%;
+    }
+
+    :local(.mainRowDailyGainz) {
+        width: 18%;
+    }
+
+    :local(.mainRowYesterdaysGainz) {
+        width: 15%;
+        display: none!important;
+    }
+
+    :local(.mainRowWeeklyGainz) {
+        width: calc(19% - 7px);
+        border-right: none !important;
+    }
+
+    :local(.rowContainer) {
+        margin: 0 auto;
+        border: 1px solid #6a7382;
+    }
+
+    :local(.rowContainer div) {
+        display: inline-block;
+        text-align: center;
+        font-size: 1.05rem;
+        border-right: 1px solid #6a7382;
+        color: #e1bb34;
+    }
+
+    :local(.statRow) {
+        width: 19%;
+        text-transform: capitalize;
+    }
+
+    :local(.levelRow) {
+        width: 9%;
+    }
+
+    :local(.expRow) {
+        width: 18%;
+    }
+
+    :local(.rankRow) {
+        width: 16%;
+    }
+
+    :local(.DailyGainzRow) {
+        width: 18%;
+    }
+
+    :local(.YesterdaysGainzRow) {
+        width: 15%;
+        display: none!important;
+    }
+
+    :local(.WeeklyGainzRow) {
+        width: calc(19% - 7px);
+        border-right: none !important;
+    }
+
+    :local(.userInfoContainer) {
+        width: 200px;
+        display: none!important;
+        vertical-align: top;
+        background-image: url('../../images/UserBackground.png'), url('../../images/background.png');
+        border-radius: 3px;
+        margin-right: 50px;
+        margin-top: 50px;
+        margin-left: 10px;
+        box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    :local(.highscoreUser) {
+        color: #e1bb34;
+        font-family: "cinzel", "serif";
+        font-weight: bold;
+        line-height: 25px;
+        font-size: 1.15rem;
+        text-align: center;
+        text-transform: uppercase;
+        width: calc(100% - 14px);
+        padding: 6px;
+    }
+
+    :local(.highscorePictureContainer) {
+        padding: 10px;
+    }
+
+    :local(.highscorePicture) {
+        width: 102px;
+        height: 102px;
+        margin: 0 auto;
+        background-image: url('../../images/RunescapeBackground.png');
+        z-index: 1;
+    }
+
+    :local(.highscoreUserMainDisplay) {
+        color: #e1bb34;
+        font-family: "cinzel", "serif";
+        padding-top: 4px;
+        padding-bottom: 10px;
+    }
+
+    :local(.highscoreUserMainDisplay div) {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    :local(.highscoreUserMainDisplay div img) {
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.mainRowItem*) {
+        display: inline-block;
+    }
+
+    :local(.highscoreContainer) {
+        width: 1000px;
+        display: inline-block;
+        float: right;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+
+    :local(.noDisplay) {
+        display: none;
+    }
+
+    :local(.infoContainer) {
+        min-width: 1270px;
+        margin: 0 auto;
+        width: calc(90% - 20px);
+        padding: 40px 10px 20px 20px;
+        border-radius: 4px;
+        overflow: auto;
+        box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        background-image: url('../../images/background.png');
+    }
+
+    :local(.mainRowDiv) {
+        border: 1px solid #6a7382;
+        border-radius: 3px;
+        line-height: 40px;
+        background-image: url('../../images/TableMain.png');
+    }
+
+    :local(.mainRowDiv div) {
+        display: inline-block;
+        text-align: center;
+        font-weight: 600;
+        border-right: #6a7382;
+        color: #e1bb34;
+    }
+
+    :local(.mainRowSkill) {
+        width: 15%;
+    }
+
+    :local(.mainRowLevel) {
+        width: 9%;
+    }
+
+    :local(.mainRowExp) {
+        width: 13%;
+    }
+
+    :local(.mainRowRank) {
+        width: 14%;
+    }
+
+    :local(.mainRowDailyGainz) {
+        width: 15%;
+    }
+
+    :local(.mainRowYesterdaysGainz) {
+        width: 15%;
+        display: inline-block!important;
+    }
+
+    :local(.mainRowWeeklyGainz) {
+        width: calc(19% - 7px);
+        border-right: none !important;
+    }
+
+    :local(.rowContainer) {
+        margin: 0 auto;
+        border: 1px solid #6a7382;
+    }
+
+    :local(.rowContainer div) {
+        display: inline-block;
+        text-align: center;
+        font-size: 1.05rem;
+        border-right: 1px solid #6a7382;
+        color: #e1bb34;
+    }
+
+    :local(.statRow) {
+        width: 15%;
+        text-transform: capitalize;
+    }
+
+    :local(.levelRow) {
+        width: 9%;
+    }
+
+    :local(.expRow) {
+        width: 13%;
+    }
+
+    :local(.rankRow) {
+        width: 14%;
+    }
+
+    :local(.DailyGainzRow) {
+        width: 15%;
+    }
+
+    :local(.YesterdaysGainzRow) {
+        width: 15%;
+        display: inline-block!important;
+    }
+
+    :local(.WeeklyGainzRow) {
+        width: calc(19% - 7px);
+        border-right: none !important;
+    }
+
+    :local(.userInfoContainer) {
+        width: 200px;
+        display: inline-block!important;
+        vertical-align: top;
+        background-image: url('../../images/UserBackground.png'), url('../../images/background.png');
+        border-radius: 3px;
+        margin-right: 10px;
+        margin-top: 50px;
+        margin-left: 20px;
+        box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    :local(.highscoreUser) {
+        color: #e1bb34;
+        font-family: "cinzel", "serif";
+        font-weight: bold;
+        line-height: 25px;
+        font-size: 1.15rem;
+        text-align: center;
+        text-transform: uppercase;
+        width: calc(100% - 14px);
+        padding: 6px;
+    }
+
+    :local(.highscorePictureContainer) {
+        padding: 10px;
+    }
+
+    :local(.highscorePicture) {
+        width: 102px;
+        height: 102px;
+        margin: 0 auto;
+        background-image: url('../../images/RunescapeBackground.png');
+        z-index: 1;
+    }
+
+    :local(.highscoreUserMainDisplay) {
+        color: #e1bb34;
+        font-family: "cinzel", "serif";
+        padding-top: 4px;
+        padding-bottom: 10px;
+    }
+
+    :local(.highscoreUserMainDisplay div) {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    :local(.highscoreUserMainDisplay div img) {
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+}

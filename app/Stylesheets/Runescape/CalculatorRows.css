@@ -1,0 +1,628 @@
+:local(.calculatorTableContainer){
+    margin-bottom: 30px;
+    background-color: #fff;
+    width: 100%;
+    min-width: 550px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+:local(.calculatorXpContainer){
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f5f5;
+    height: auto;
+    line-height: 50px;
+    padding: 0 20px;
+    width: calc(100% - 40px);
+    min-width: 510px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+:local(.skillImage){
+    margin-right: 10px;
+    margin-bottom: -2px;
+    vertical-align: middle;
+}
+
+:local(.skillBonusForm){
+    display: block;
+    font-size: .8rem;
+}
+
+:local(.skillBonusForm div){
+    display: inline-block;
+    margin-left: 20px;
+}
+
+:local(.mobileBreakpoint){
+    display: block!important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:local(.skillBonusForm div select){
+    margin-left: 6px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.1), 0 0 8px rgba(0,0,0,0.1);
+    outline: none;
+    overflow: visible !important;
+    border-radius: 0;
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+    background-color: white;
+    cursor: default;
+}
+
+:local(.skillBonusForm div input[type="checkbox"]){
+    width: 14px;
+    height: 14px;
+    background: #fcfff4;
+    margin-left: 6px;
+}
+
+:local(.XpRightContainer form){
+    margin-left: 20px;
+}
+
+:local(.XpRightContainer form input[type="radio"]){
+    margin-right: 5px;
+    margin-left: 4px;
+    line-height: normal;
+    padding: 0 10px;
+}
+
+:local(.XpEntryField){
+    margin-left: 4px;
+    margin-right: 4px;
+    line-height: 25px;
+    width: 125px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.1), 0 0 8px rgba(0,0,0,0.1);
+    outline: none;
+    padding: 0 10px;
+}
+
+:local(.XpDisabledField){
+    margin-left: 4px;
+    margin-right: 4px;
+    line-height: 25px;
+    width: 125px;
+    border: 1px solid red;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.1), 0 0 8px rgba(0,0,0,0.1);
+    outline: none;
+    padding: 0 10px;
+}
+
+:local(.calculatorTableRowsContainer){
+    margin: 10px 0px 20px 0px;
+}
+
+:local(.calculatorMainRow){
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin: 0 auto;
+    display: block;
+}
+
+:local(.calculatorMainRow div){
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    line-height: 15px;
+    padding-top: 5px;
+    font-size: .9rem;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+:local(.itemRow){
+    width: 100%;
+    border-bottom: 1px dotted #ccc;
+    margin: 0 auto;
+}
+
+:local(.itemRow div){
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+:local(.grayedOutItem){
+    background-color: #7d8da5;
+    opacity: 0.8;
+    border-bottom: 1px dotted #ccc;
+    margin: 0 auto;
+}
+
+:local(.grayedOutItem div){
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: 0.8;
+}
+
+:local(.nameRow){
+    width: 18%;
+}
+
+:local(.levelRow){
+    width: 11%;
+}
+
+:local(.expRow){
+    width: 10%;
+}
+
+:local(.buyRow){
+    width: 8.5%;
+}
+
+:local(.sellRow){
+    width: 8.5%;
+}
+
+:local(.costRow){
+    display: none!important;
+}
+
+:local(.gpxpRow){
+    width: 9.5%;
+}
+
+:local(.profitRow){
+    display: none!important;
+}
+
+:local(.mobileProfitRow){
+    width: 13.5%;
+}
+
+:local(.unitsRow){
+    width: 21%;
+}
+
+:local(.redNumber){
+    color: red;
+}
+
+:local(.greenNumber){
+    color: green;
+}
+
+:local(.blueNumber){
+    color: blue;
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    :local(.calculatorTableContainer){
+        margin-bottom: 30px;
+        background-color: #fff;
+        width: 100%;
+        min-width: 600px;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    }
+
+    :local(.calculatorXpContainer){
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom: 1px solid #ddd;
+        background-color: #f5f5f5;
+        height: auto;
+        line-height: 50px;
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        min-width: 540px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        overflow: hidden;
+    }
+
+    :local(.skillImage){
+        margin-right: 10px;
+        margin-bottom: -2px;
+        vertical-align: middle;
+    }
+
+    :local(.skillBonusForm){
+        display: inline-block;
+        margin-left: 10px;
+        font-size: .8rem;
+    }
+
+    :local(.skillBonusForm div){
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    :local(.mobileBreakpoint){
+        display: none!important;
+    }
+
+    :local(.skillBonusForm div select){
+        margin-left: 6px;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 0 4px rgba(0,0,0,0.1), 0 0 8px rgba(0,0,0,0.1);
+        outline: none;
+        overflow: visible !important;
+        border-radius: 0;
+        -webkit-appearance: menulist;
+        box-sizing: border-box;
+        align-items: center;
+        white-space: pre;
+        -webkit-rtl-ordering: logical;
+        color: black;
+        background-color: white;
+        cursor: default;
+    }
+
+    :local(.skillBonusForm div input[type="checkbox"]){
+        width: 16px;
+        height: 16px;
+        background: #fcfff4;
+        margin-left: 6px;
+    }
+
+    :local(.XpRightContainer){
+        float: right;
+    }
+
+    :local(.XpRightContainer form input[type="radio"]){
+        margin-right: 5px;
+        margin-left: 4px;
+        line-height: normal;
+        padding: 0 10px;
+    }
+
+    :local(.XpEntryField){
+        margin-left: 4px;
+        margin-right: 4px;
+        line-height: 25px;
+        width: 125px;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 0 4px rgba(0,0,0,0.1), 0 0 8px rgba(0,0,0,0.1);
+        outline: none;
+        padding: 0 10px;
+    }
+
+    :local(.XpDisabledField){
+        margin-left: 4px;
+        margin-right: 4px;
+        line-height: 25px;
+        width: 125px;
+        border: 1px solid red;
+        box-shadow: inset 0 0 4px rgba(0,0,0,0.1), 0 0 8px rgba(0,0,0,0.1);
+        outline: none;
+        padding: 0 10px;
+    }
+
+    :local(.calculatorTableRowsContainer){
+        margin: 10px 0px 20px 0px;
+    }
+
+    :local(.calculatorMainRow){
+        width: 100%;
+        border-bottom: 1px solid gray;
+        margin: 0 auto;
+        display: block;
+    }
+
+    :local(.calculatorMainRow div){
+        display: inline-block;
+        text-align: center;
+        font-weight: 700;
+        line-height: 15px;
+        padding-top: 5px;
+        font-size: 1rem;
+        padding-bottom: 5px;
+        vertical-align: middle;
+    }
+
+    :local(.itemRow){
+        width: 100%;
+        border-bottom: 1px dotted #ccc;
+        margin: 0 auto;
+    }
+
+    :local(.itemRow div){
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    :local(.grayedOutItem){
+        background-color: #7d8da5;
+        opacity: 0.8;
+        border-bottom: 1px dotted #ccc;
+        margin: 0 auto;
+    }
+
+    :local(.grayedOutItem div){
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        opacity: 0.8;
+    }
+
+    :local(.nameRow){
+        width: 21%;
+    }
+
+    :local(.levelRow){
+        width: 9.5%;
+    }
+
+    :local(.expRow){
+        width: 10%;
+    }
+
+    :local(.buyRow){
+        width: 9.5%;
+    }
+
+    :local(.sellRow){
+        width: 9.5%;
+    }
+
+    :local(.costRow){
+        display: none!important;
+    }
+
+    :local(.gpxpRow){
+        width: 8.5%;
+    }
+
+    :local(.profitRow){
+        width: 15%;
+        display: inline-block!important;
+    }
+
+    :local(.mobileProfitRow){
+        display: none!important;
+    }
+
+    :local(.unitsRow){
+        width: 17%;
+    }
+
+    :local(.redNumber){
+        color: red;
+    }
+
+    :local(.greenNumber){
+        color: green;
+    }
+
+    :local(.blueNumber){
+        color: blue;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.calculatorTableContainer){
+        margin-bottom: 30px;
+        background-color: #fff;
+        min-width: 1300px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    }
+
+    :local(.calculatorXpContainer){
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom: 1px solid #ddd;
+        background-color: #f5f5f5;
+        width: auto;
+        height: auto;
+        line-height: 50px;
+        padding: 0 20px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        overflow: hidden;
+    }
+
+    :local(.skillImage){
+        margin-right: 10px;
+        margin-bottom: -2px;
+        vertical-align: middle;
+    }
+
+    :local(.skillBonusForm){
+        display: inline-block;
+        margin-left: 50px;
+        font-size: .8rem;
+    }
+
+    :local(.skillBonusForm div){
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    :local(.mobileBreakpoint){
+        display: none!important;
+    }
+
+    :local(.skillBonusForm div select){
+        margin-left: 6px;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 0 4px rgba(0,0,0,0.1), 0 0 8px rgba(0,0,0,0.1);
+        outline: none;
+        overflow: visible !important;
+        border-radius: 0;
+        -webkit-appearance: menulist;
+        box-sizing: border-box;
+        align-items: center;
+        white-space: pre;
+        -webkit-rtl-ordering: logical;
+        color: black;
+        background-color: white;
+        cursor: default;
+    }
+
+    :local(.skillBonusForm div input[type="checkbox"]){
+        width: 14px;
+        height: 14px;
+        background: #fcfff4;
+        margin-left: 6px;
+    }
+
+    :local(.XpRightContainer){
+        float: right;
+    }
+
+    :local(.XpRightContainer form input[type="radio"]){
+        margin-right: 5px;
+        margin-left: 4px;
+        line-height: normal;
+        padding: 0 10px;
+    }
+
+    :local(.XpEntryField){
+        margin-left: 4px;
+        margin-right: 4px;
+        line-height: 25px;
+        width: 125px;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 0 4px rgba(0,0,0,0.1), 0 0 8px rgba(0,0,0,0.1);
+        outline: none;
+        padding: 0 10px;
+    }
+
+    :local(.XpDisabledField){
+        margin-left: 4px;
+        margin-right: 4px;
+        line-height: 25px;
+        width: 125px;
+        border: 1px solid red;
+        box-shadow: inset 0 0 4px rgba(0,0,0,0.1), 0 0 8px rgba(0,0,0,0.1);
+        outline: none;
+        padding: 0 10px;
+    }
+
+    :local(.calculatorTableRowsContainer){
+        margin: 10px 0px 20px 0px;
+    }
+
+    :local(.calculatorMainRow){
+        width: 100%;
+        border-bottom: 1px solid gray;
+        margin: 0 auto;
+        display: block;
+    }
+
+    :local(.calculatorMainRow div){
+        display: inline-block;
+        text-align: center;
+        font-weight: 700;
+        line-height: 15px;
+        padding-top: 5px;
+        font-size: 1rem;
+        padding-bottom: 5px;
+        vertical-align: middle;
+    }
+
+    :local(.itemRow){
+        width: 100%;
+        border-bottom: 1px dotted #ccc;
+        margin: 0 auto;
+    }
+
+    :local(.itemRow div){
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    :local(.grayedOutItem){
+        background-color: #7d8da5;
+        opacity: 0.8;
+        border-bottom: 1px dotted #ccc;
+        margin: 0 auto;
+    }
+
+    :local(.grayedOutItem div){
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        opacity: 0.8;
+    }
+
+    :local(.nameRow){
+        width: 22%;
+    }
+
+    :local(.levelRow){
+        width: 6.5%;
+    }
+
+    :local(.expRow){
+        width: 6.5%;
+    }
+
+    :local(.buyRow){
+        width: 9.5%;
+    }
+
+    :local(.sellRow){
+        width: 9.5%;
+    }
+
+    :local(.costRow){
+        width: 9.5%;
+        display: inline-block!important;
+    }
+
+    :local(.gpxpRow){
+        width: 8.5%;
+    }
+
+    :local(.profitRow){
+        width: 9.5%;
+        display: inline-block!important;
+    }
+
+    :local(.mobileProfitRow){
+        display: none!important;
+    }
+
+    :local(.unitsRow){
+        width: 13%;
+    }
+
+    :local(.redNumber){
+        color: red;
+    }
+
+    :local(.greenNumber){
+        color: green;
+    }
+
+    :local(.blueNumber){
+        color: blue;
+    }
+}

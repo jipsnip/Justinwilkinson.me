@@ -1,0 +1,104 @@
+:local(.skillButtonContainer) {
+    margin-top: 20px;
+    width: 100%;
+}
+
+:local(.skillButton) {
+    padding: 0 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+:local(.skillButton img) {
+    border: solid 1px #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: -7px;
+    vertical-align: middle;
+}
+
+:local(.selectedSkillButton) {
+    padding: 0 10px;
+}
+
+:local(.selectedSkillButton img) {
+    border: solid 1px #e1bb34;
+    background-color: #ffde6b;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: -7px;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 600px){
+    :local(.skillButtonContainer) {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    :local(.skillButton) {
+        padding: 0 10px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    :local(.skillButton img) {
+        border: solid 1px #ccc;
+        padding: 5px;
+        border-radius: 4px;
+        margin-top: -7px;
+        vertical-align: middle;
+    }
+
+    :local(.selectedSkillButton) {
+        padding: 0 10px;
+    }
+
+    :local(.selectedSkillButton img) {
+        border: solid 1px #e1bb34;
+        background-color: #ffde6b;
+        padding: 5px;
+        border-radius: 4px;
+        margin-top: -7px;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.skillButtonContainer) {
+        padding: 10px 5px 0 5px;
+        margin: 0 auto;
+        max-width: 75%;
+        width: auto;
+        display: inline-block;
+        text-align: center;
+        float: right;
+    }
+
+    :local(.skillButton) {
+        padding: 0px 10px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    :local(.skillButton img) {
+        border: solid 1px #ccc;
+        padding: 5px;
+        border-radius: 4px;
+        margin-top: -7px;
+        vertical-align: middle;
+    }
+
+    :local(.selectedSkillButton) {
+        padding: 0 10px;
+    }
+
+    :local(.selectedSkillButton img) {
+        border: solid 1px #e1bb34;
+        background-color: #ffde6b;
+        padding: 5px;
+        border-radius: 4px;
+        margin-top: -7px;
+        vertical-align: middle;
+    }
+}

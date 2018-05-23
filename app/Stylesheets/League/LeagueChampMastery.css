@@ -1,0 +1,66 @@
+:local(.rank7){
+    background: url('../../images/League/ChampionMastery/M7Square.png');
+    display: inline-block;
+    height: 150px;
+    width: 80px;
+    position: relative;
+}
+
+:local(.rank6){
+    background: url('../../images/League/ChampionMastery/M6Square.png');
+    display: inline-block;
+    height: 150px;
+     width: 80px;
+     position: relative;
+}
+
+:local(.rank5){
+    background: url('../../images/League/ChampionMastery/M5Square.png');
+    display: inline-block;
+    height: 150px;
+    width: 80px;
+    position: relative;
+}
+
+:local(.rank4){
+    background: url('../../images/League/ChampionMastery/M4Square.png');
+    display: inline-block;
+    height: 150px;
+    width: 80px;
+    position: relative;
+}
+
+:local(.rank3){
+    background: url('../../images/League/ChampionMastery/M3Square.png');
+    display: inline-block;
+    height: 150px;
+    width: 80px;
+    position: relative;
+}
+
+:local(.rank2){
+    background: url('../../images/League/ChampionMastery/M2Square.png');
+    display: inline-block;
+    height: 150px;
+    width: 80px;
+    position: relative;
+}
+
+:local(.rank1){
+    background: url('../../images/League/ChampionMastery/M1Square.png');
+    display: inline-block;
+    height: 150px;
+    width: 80px;
+    position: relative;
+}
+
+:local(.masteryImage){
+    height: 70px;
+    position: absolute;
+    left: 4px;
+    top: 11px;
+}
+
+:local(.masteryContainer){
+    margin: 0 41.5px;
+}

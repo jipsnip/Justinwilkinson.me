@@ -1,0 +1,21 @@
+:local(.mainContentDiv){
+    width: 1595px;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 49;
+    background: #262626;
+    transition: width 1s ease-in-out;
+}
+
+:local(.expandedMainContentDiv){
+    width: 1595px;
+    position: relative;
+    right: 0;
+    top: 0;
+    background: #262626;
+    transition: width 1s ease-in-out;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}

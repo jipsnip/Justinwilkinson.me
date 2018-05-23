@@ -1,0 +1,455 @@
+@media screen and (max-width: 599px){
+    :local(.videosContainer) {
+        margin: 20px 0;
+        display: inline-block;
+        width: 100%;
+    }
+
+    :local(.streamContainer), :local(.gridStreamContainer), :local(.expandedStreamContainer), :local(.expandedGridStreamContainer) {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-right: 0;
+        border-bottom: 1px solid #7d5bbe;
+        height: 740px;
+        width: 100%;
+        overflow: hidden;
+        vertical-align: top;
+        transition: height 1s ease-in-out;
+    }
+
+    :local(.minimizedStreamContainer), :local(.minimizedGridStreamContainer), :local(.minimizedExpandedStreamContainer), :local(.minimizedExpandedGridStreamContainer) {
+        height: 40px;
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #7d5bbe;
+        overflow: hidden;
+        vertical-align: top;
+        transition: height 1s ease-in-out;
+    }
+
+    :local(.videoHeader) {
+        background: #7d5bbe;
+        height: 40px;
+        width: 100%;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    :local(.streamName) {
+        color: white;
+        display: inline-block;
+        font-weight: 700;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        padding: 9px 0 0 12px;
+    }
+
+    :local(.expander) {
+        float: right;
+        height: 25px;
+        padding-top: 8px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    :local(.video), :local(.expandedVideo), :local(.gridVideo), :local(.expandedGridVideo) {
+        width: 100%;
+        height: 400px;
+    }
+
+    :local(.videoContainer), :local(.expandedVideoContainer), :local(.gridVideoContainer), :local(.expandedGridVideoContainer) {
+        display: inline-block;
+        border-left: 1px solid #7d5bbe;
+        height: 400px;
+        width: calc(100% - 2px);
+        border-right: 1px solid #7d5bbe;
+    }
+
+    :local(.chatContainer), :local(.expandedChatContainer), :local(.gridChatContainer), :local(.expandedGridChatContainer) {
+        display: inline-block;
+        width: calc(100% - 2px);
+        margin-top: -4px;
+        border-top: 1px solid #7d5bbe;
+        border-left: 1px solid #7d5bbe;
+        border-right: 1px solid #7d5bbe;
+        vertical-align: top;
+    }
+
+    :local(.chat), :local(.gridChat), :local(.expandedChat), :local(.gridExpandedChat) {
+        height: 300px;
+        width: calc(100% - 1px);
+    }
+
+    :local(.remove) {
+        font-size: 1.25rem;
+        color: #ffffff;
+        margin: 0 0 0 20px;
+        display: inline-block;
+        padding: 5px;
+        vertical-align: top;
+        cursor: pointer;
+    }
+
+    :local(.remove:hover) {
+        color: #d7232a;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
+    :local(.videosContainer) {
+        margin: 20px 0;
+        display: inline-block;
+        width: 100%;
+    }
+
+    :local(.streamContainer), :local(.gridStreamContainer), :local(.expandedStreamContainer), :local(.expandedGridStreamContainer) {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-right: 0;
+        border-bottom: 1px solid #7d5bbe;
+        height: 740px;
+        width: 100%;
+        overflow: hidden;
+        vertical-align: top;
+        transition: height 1s ease-in-out;
+    }
+
+    :local(.minimizedStreamContainer), :local(.minimizedGridStreamContainer), :local(.minimizedExpandedStreamContainer), :local(.minimizedExpandedGridStreamContainer) {
+        height: 40px;
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 100%;
+        transition: height 1s ease-in-out;
+        border-bottom: 1px solid #7d5bbe;
+        overflow: hidden;
+        vertical-align: top;
+    }
+
+    :local(.videoHeader) {
+        background: #7d5bbe;
+        height: 40px;
+        width: 100%;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    :local(.streamName) {
+        color: white;
+        display: inline-block;
+        font-weight: 700;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        padding: 9px 0 0 12px;
+    }
+
+    :local(.expander) {
+        float: right;
+        height: 25px;
+        padding-top: 8px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    :local(.video), :local(.expandedVideo), :local(.gridVideo), :local(.expandedGridVideo) {
+        width: 100%;
+        height: 400px;
+    }
+
+    :local(.videoContainer), :local(.expandedVideoContainer), :local(.gridVideoContainer), :local(.expandedGridVideoContainer) {
+        display: inline-block;
+        border-left: 1px solid #7d5bbe;
+        height: 400px;
+        width: calc(100% - 2px);
+        border-right: 1px solid #7d5bbe;
+    }
+
+    :local(.chatContainer), :local(.expandedChatContainer), :local(.gridChatContainer), :local(.expandedGridChatContainer) {
+        display: inline-block;
+        width: calc(100% - 2px);
+        margin-top: -4px;
+        border-top: 1px solid #7d5bbe;
+        border-left: 1px solid #7d5bbe;
+        border-right: 1px solid #7d5bbe;
+        vertical-align: top;
+    }
+
+    :local(.chat), :local(.gridChat), :local(.expandedChat), :local(.gridExpandedChat) {
+        height: 300px;
+        width: calc(100% - 1px);
+    }
+
+    :local(.remove) {
+        font-size: 1.25rem;
+        color: #ffffff;
+        margin: 0 0 0 20px;
+        display: inline-block;
+        padding: 5px;
+        vertical-align: top;
+        cursor: pointer;
+    }
+
+    :local(.remove:hover) {
+        color: #d7232a;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.videosContainer) {
+        margin: 20px 0;
+        display: inline-block;
+    }
+
+    /**/
+    :local(.streamContainer) {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-right: 0;
+        border-bottom: 1px solid #7d5bbe;
+        height: 740px;
+        width: 1612px;
+        overflow: hidden;
+        transition: height 1s ease-in-out, width 1s ease-in-out, margin-right 1s ease-in-out;
+        vertical-align: top;
+    }
+
+    /**/
+    :local(.gridStreamContainer) {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-right: 16px;
+        height: 540px;
+        width: 800px;
+        vertical-align: top;
+        border-bottom: 1px solid #7d5bbe;
+        overflow: hidden;
+        transition: height 1s ease-in-out, width 1s ease-in-out, margin-right 1s ease-in-out;
+    }
+
+    /**/
+    :local(.expandedStreamContainer) {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-right: 0;
+        border-bottom: 1px solid #7d5bbe;
+        height: 847px;
+        width: 1802px;
+        overflow: hidden;
+        transition: height 1s ease-in-out, width 1s ease-in-out, margin-right 1s ease-in-out;
+        vertical-align: top;
+    }
+
+    /**/
+    :local(.expandedGridStreamContainer) {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-right: 21px;
+        border-bottom: 1px solid #7d5bbe;
+        height: 540px;
+        width: 890px;
+        vertical-align: top;
+        overflow: hidden;
+        transition: height 1s ease-in-out, width 1s ease-in-out, margin-right 1s ease-in-out;
+    }
+
+    /**/
+    :local(.minimizedStreamContainer) {
+        height: 40px;
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 1612px;
+        transition: height 1s ease-in-out, width 1s ease-in-out, margin-right 1s ease-in-out;
+        border-bottom: 1px solid #7d5bbe;
+        overflow: hidden;
+        vertical-align: top;
+    }
+
+    /**/
+    :local(.minimizedGridStreamContainer) {
+        height: 40px;
+        margin-bottom: 20px;
+        margin-right: 16px;
+        display: inline-block;
+        width: 800px;
+        transition: height 1s ease-in-out, width 1s ease-in-out, margin 1s ease-in-out;
+        border-bottom: 1px solid #7d5bbe;
+        overflow: hidden;
+        vertical-align: top;
+    }
+
+    /**/
+    :local(.minimizedExpandedStreamContainer) {
+        height: 40px;
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 1802px;
+        transition: height 1s ease-in-out, width 1s ease-in-out, margin-right 1s ease-in-out;
+        border-bottom: 1px solid #7d5bbe;
+        overflow: hidden;
+        vertical-align: top;
+    }
+
+    /**/
+    :local(.minimizedExpandedGridStreamContainer) {
+        height: 40px;
+        margin-bottom: 20px;
+        margin-right: 21px;
+        width: 890px;
+        display: inline-block;
+        transition: height 1s ease-in-out, width 1s ease-in-out, margin-right 1s ease-in-out;
+        border-bottom: 1px solid #7d5bbe;
+        overflow: hidden;
+        vertical-align: top;
+    }
+
+    :local(.videoHeader) {
+        background: #7d5bbe;
+        height: 40px;
+        width: 100%;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    :local(.streamName) {
+        color: white;
+        display: inline-block;
+        font-weight: 700;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        padding: 9px 0 0 12px;
+    }
+
+    :local(.expander) {
+        float: right;
+        height: 25px;
+        padding-top: 8px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    :local(.video) {
+        width: 1245px;
+        height: 700px;
+        transition: width 1s ease-in-out, height 1s ease-in-out;
+    }
+
+    :local(.expandedVideo) {
+        width: 1435px;
+        height: 807px;
+        transition: width 1s ease-in-out, height 1s ease-in-out;
+    }
+
+    :local(.gridVideo) {
+        width: 540px;
+        height: 500px;
+        transition: width 1s ease-in-out, height 1s ease-in-out;
+    }
+
+    :local(.expandedGridVideo) {
+        width: 575px;
+        height: 500px;
+        transition: width 1s ease-in-out, height 1s ease-in-out;
+    }
+
+    :local(.videoContainer) {
+        display: inline-block;
+        border-left: 1px solid #7d5bbe;
+        height: 700px;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.expandedVideoContainer) {
+        display: inline-block;
+        border-left: 1px solid #7d5bbe;
+        height: 807px;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.gridVideoContainer) {
+        display: inline-block;
+        border-left: 1px solid #7d5bbe;
+        height: 500px;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.expandedGridVideoContainer) {
+        height: 500px;
+        display: inline-block;
+        border-left: 1px solid #7d5bbe;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.chatContainer) {
+        display: inline-block;
+        vertical-align: top;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.expandedChatContainer) {
+        display: inline-block;
+        vertical-align: top;
+        height: 807px;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.gridChatContainer) {
+        display: inline-block;
+        vertical-align: top;
+        height: 500px;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.expandedGridChatContainer) {
+        display: inline-block;
+        vertical-align: top;
+        height: 500px;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.chat) {
+        border-left: 3px solid #7d5bbe;
+        border-right: 1px solid #7d5bbe;
+        height: 700px;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.gridChat) {
+        border-left: 3px solid #7d5bbe;
+        border-right: 1px solid #7d5bbe;
+        height: 500px;
+        width: 255px;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.expandedChat) {
+        border-left: 3px solid #7d5bbe;
+        border-right: 1px solid #7d5bbe;
+        height: 807px;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.gridExpandedChat) {
+        border-left: 3px solid #7d5bbe;
+        border-right: 1px solid #7d5bbe;
+        height: 500px;
+        width: 310px;
+        transition: height 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    :local(.remove) {
+        font-size: 1.25rem;
+        color: #ffffff;
+        margin: 0 0 0 20px;
+        display: inline-block;
+        padding: 5px;
+        vertical-align: top;
+        cursor: pointer;
+    }
+
+    :local(.remove:hover) {
+        color: #d7232a;
+    }
+}

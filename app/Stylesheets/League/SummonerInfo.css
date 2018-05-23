@@ -1,0 +1,103 @@
+:local(.summonerInfoContainer){
+    display: inline-block;
+    position: relative;
+    width: 325px;
+    top: 0;
+    left: 0;
+    margin-top: -65px;
+    z-index: 10;
+    background: #1e1d1d;
+    font-family: 'BeaufortLoL', 'Times New Roman', 'sans-serif';
+    color: #c9aa71;
+    transition: width 1s ease-in-out;
+}
+
+:local(.summonerInfoMinimized){
+    position: relative;
+    width: 33px;
+    top: 0;
+    left: 0;
+    margin-top: -65px;
+    z-index: 10;
+    overflow: hidden;
+    background: #1e1d1d;
+    font-family: 'BeaufortLoL', 'Times New Roman', 'sans-serif';
+    color: #c9aa71;
+    transition: width 1s ease-in-out;
+}
+
+:local(.imageDiv){
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 10px auto;
+}
+
+:local(.imageDiv:after){
+    background: transparent url('../../images/League/PictureFrame.png') no-repeat 0 0;
+    z-index: 10;
+    content: '';
+    width: 156px;
+    height: 156px;
+    position: absolute;
+    left: 87px;
+}
+
+:local(.profileImage){
+    height: 150px;
+}
+
+:local(.summonerName){
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 17px;
+    border-bottom: 1px solid #f1e6d0;
+}
+
+:local(.minimize){
+    border-color: transparent #c79a3c transparent transparent;
+    border-style: solid;
+    content: '';
+    border-width: 14px;
+    position: absolute;
+    top: 2px;
+    right: 11px;
+}
+
+:local(.minimized){
+    border-color: transparent transparent transparent #c79a3c;
+    border-style: solid;
+    content: '';
+    border-width: 14px;
+    position: absolute;
+    top: 2px;
+    right: -4px;
+}
+
+:local(.minimizeContainer){
+    display: inline-block;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 33px;
+    height: 33px;
+    background: #1e1d1d;
+    box-shadow: -2px 5px 9px black;
+    cursor: pointer;
+    z-index: 12;
+    transition: top 1s ease-in-out;
+}
+
+:local(.minimizedContainer){
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 33px;
+    height: 33px;
+    background: #1e1d1d;
+    box-shadow: -2px 5px 9px black;
+    cursor: pointer;
+    z-index: 12;
+    transition: top 1s ease-in-out;
+}

@@ -1,0 +1,9 @@
+:local(.RadioForm){
+    display: inline-block;
+    margin: 5px 0 0 20px;
+}
+
+:local(.RadioDiv){
+    display: inline-block;
+    margin-left: 10px;
+}

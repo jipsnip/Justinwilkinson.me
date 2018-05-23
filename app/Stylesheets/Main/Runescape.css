@@ -1,0 +1,14 @@
+:local(.runescapeComponent){
+    background: transparent url('../../images/TableBackground.jpg') repeat 0 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+:local(.expandedRunescapeComponent){
+    background: transparent url('../../images/TableBackground.jpg') repeat 0 0;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}

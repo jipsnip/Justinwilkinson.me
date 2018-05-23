@@ -1,0 +1,42 @@
+@media screen and (max-width: 599px) {
+    :local(.twitchMain) {
+        width: 100%;
+        min-width: 500px;
+        min-height: 120vh;
+        height: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        background: #17141f;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    :local(.twitchMain) {
+        width: 100%;
+        min-width: 750px;
+        min-height: calc(100vh - 52px);
+        height: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        background: #17141f;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.twitchMain) {
+        width: 100%;
+        min-width: 1492px;
+        min-height: calc(100vh - 52px);
+        height: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        background: #17141f;
+        position: relative;
+        display: flex;
+    }
+}

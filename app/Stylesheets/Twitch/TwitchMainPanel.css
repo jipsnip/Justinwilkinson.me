@@ -1,0 +1,41 @@
+@media screen and (max-width: 599px) {
+    :local(.expandedMainPanelDiv), :local(.mainPanelDiv) {
+        min-width: 450px;
+        width: calc(100% - 20px);
+        position: relative;
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
+    :local(.expandedMainPanelDiv), :local(.mainPanelDiv) {
+        min-width: 550px;
+        width: calc(100% - 20px);
+        position: relative;
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.mainPanelDiv) {
+        min-width: 1250px;
+        width: calc(100% - 271px);
+        position: relative;
+        padding-top: 10px;
+        top: 0;
+        left: 30px;
+        transition: width 1s ease-in-out;
+    }
+
+    :local(.expandedMainPanelDiv) {
+        min-width: 1250px;
+        width: calc(100% - 81px);
+        position: relative;
+        padding-top: 10px;
+        top: 0;
+        left: 30px;
+        transition: width 1s ease-in-out;
+    }
+}

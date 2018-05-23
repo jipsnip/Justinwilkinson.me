@@ -1,0 +1,314 @@
+@media screen and (max-width: 599px) {
+    :local(.inputDiv) {
+        padding: 150px 20px 35px 50px;
+        border-bottom: 1px solid #2c2541;
+        margin-right: 30px;
+        position: relative;
+    }
+
+    :local(.input) {
+        background: #0e0c13;
+        border: 1px solid #392e5c;
+        color: #faf9fa;
+        padding: .5rem .1rem .5rem .5rem;
+        display: inline-block;
+        vertical-align: top;
+        width: 220px;
+    }
+
+    :local(.input:focus) {
+        border: 1px solid #7d5bbe;
+        outline: none;
+    }
+
+    :local(.button) {
+        background: #0e0c13;
+        border-color: #392e5c #392e5c #392e5c transparent;
+        border-style: solid;
+        border-width: 1px;
+        padding: 0;
+        height: 33px;
+        cursor: pointer;
+    }
+
+    :local(.button:focus) {
+        outline: none;
+        border-color: #7d5bbe;
+    }
+
+    :local(.searchImage) {
+        height: 31px;
+    }
+
+    :local(.recommendationDiv) {
+        display: inline-block;
+        background: #0e0c13;
+        width: 230px;
+        position: absolute;
+        top: 182px;
+        left: 50px;
+        border: 1px solid #7d5bbe;
+        z-index: 200;
+    }
+
+    :local(.enteredText) {
+        display: inline-block;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    :local(.suggestedText) {
+        display: inline-block;
+        color: #b8b5c0;
+        cursor: pointer;
+    }
+
+    :local(.recommendation) {
+        display: block;
+        padding: 5px 7px;
+        z-index: 201;
+    }
+
+    :local(.recommendation:hover) {
+        background: #4b367c;
+    }
+
+    :local(.rightContainer) {
+        float: right;
+        z-index: 204;
+        display: inline-block;
+    }
+
+    :local(.remove) {
+        font-size: 1.15rem;
+        vertical-align: top;
+        color: white;
+        cursor: pointer;
+        padding: 2px 3px 2px 4px;
+    }
+
+    :local(.remove:hover) {
+        color: #ec1313
+    }
+
+    :local(.preferred) {
+        margin: 3px 2px 0 2px;
+        vertical-align: top;
+        padding: 3px 4px;
+        cursor: pointer;
+    }
+
+    :local(.preferredImage) {
+        height: 18px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    :local(.inputDiv) {
+        padding: 35px 20px 35px 50px;
+        border-bottom: 1px solid #2c2541;
+        margin-right: 30px;
+        position: relative;
+    }
+
+    :local(.input) {
+        background: #0e0c13;
+        border: 1px solid #392e5c;
+        color: #faf9fa;
+        padding: .5rem .1rem .5rem .5rem;
+        display: inline-block;
+        vertical-align: top;
+        width: 220px;
+    }
+
+    :local(.input:focus) {
+        border: 1px solid #7d5bbe;
+        outline: none;
+    }
+
+    :local(.button) {
+        background: #0e0c13;
+        border-color: #392e5c #392e5c #392e5c transparent;
+        border-style: solid;
+        border-width: 1px;
+        padding: 0;
+        height: 33px;
+        cursor: pointer;
+    }
+
+    :local(.button:focus) {
+        outline: none;
+        border-color: #7d5bbe;
+    }
+
+    :local(.searchImage) {
+        height: 31px;
+    }
+
+    :local(.recommendationDiv) {
+        display: inline-block;
+        background: #0e0c13;
+        width: 230px;
+        position: absolute;
+        top: 62px;
+        left: 50px;
+        border: 1px solid #7d5bbe;
+        z-index: 200;
+    }
+
+    :local(.enteredText) {
+        display: inline-block;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    :local(.suggestedText) {
+        display: inline-block;
+        color: #b8b5c0;
+        cursor: pointer;
+    }
+
+    :local(.recommendation) {
+        display: block;
+        padding: 5px 7px;
+        z-index: 201;
+    }
+
+    :local(.recommendation:hover) {
+        background: #4b367c;
+    }
+
+    :local(.rightContainer) {
+        float: right;
+        z-index: 204;
+        display: inline-block;
+    }
+
+    :local(.remove) {
+        font-size: 1.15rem;
+        vertical-align: top;
+        color: white;
+        cursor: pointer;
+        padding: 2px 3px 2px 4px;
+    }
+
+    :local(.remove:hover) {
+        color: #ec1313
+    }
+
+    :local(.preferred) {
+        margin: 3px 2px 0 2px;
+        vertical-align: top;
+        padding: 3px 4px;
+        cursor: pointer;
+    }
+
+    :local(.preferredImage) {
+        height: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.inputDiv) {
+        padding: 20px 20px 20px 100px;
+        border-bottom: 1px solid #2c2541;
+        margin-right: 30px;
+        position: relative;
+    }
+
+    :local(.input) {
+        background: #0e0c13;
+        border: 1px solid #392e5c;
+        color: #faf9fa;
+        padding: .5rem .1rem .5rem .5rem;
+        display: inline-block;
+        vertical-align: top;
+        width: 220px;
+    }
+
+    :local(.input:focus) {
+        border: 1px solid #7d5bbe;
+        outline: none;
+    }
+
+    :local(.button) {
+        background: #0e0c13;
+        border-color: #392e5c #392e5c #392e5c transparent;
+        border-style: solid;
+        border-width: 1px;
+        padding: 0;
+        height: 33px;
+        cursor: pointer;
+    }
+
+    :local(.button:focus) {
+        outline: none;
+        border-color: #7d5bbe;
+    }
+
+    :local(.searchImage) {
+        height: 31px;
+    }
+
+    :local(.recommendationDiv) {
+        display: inline-block;
+        background: #0e0c13;
+        width: 230px;
+        position: absolute;
+        top: 52px;
+        left: 100px;
+        border: 1px solid #7d5bbe;
+        z-index: 200;
+    }
+
+    :local(.enteredText) {
+        display: inline-block;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    :local(.suggestedText) {
+        display: inline-block;
+        color: #b8b5c0;
+        cursor: pointer;
+    }
+
+    :local(.recommendation) {
+        display: block;
+        padding: 5px 7px;
+        z-index: 201;
+    }
+
+    :local(.recommendation:hover) {
+        background: #4b367c;
+    }
+
+    :local(.rightContainer) {
+        float: right;
+        z-index: 204;
+        display: inline-block;
+    }
+
+    :local(.remove) {
+        font-size: 1.15rem;
+        vertical-align: top;
+        color: white;
+        cursor: pointer;
+        padding: 2px 3px 2px 4px;
+    }
+
+    :local(.remove:hover) {
+        color: #ec1313
+    }
+
+    :local(.preferred) {
+        margin: 3px 2px 0 2px;
+        vertical-align: top;
+        padding: 3px 4px;
+        cursor: pointer;
+    }
+
+    :local(.preferredImage) {
+        height: 18px;
+    }
+}

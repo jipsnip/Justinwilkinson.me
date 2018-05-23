@@ -1,0 +1,183 @@
+:local(.loginDiv){
+    position: absolute;
+    top: 10vh;
+    left: calc(50% - 225px);
+    width: 450px;
+    background: #F5F5F5;
+    border: 1px solid #222222;
+    border-radius: 4px;
+}
+
+:local(.mainLoginDiv){
+    box-shadow: inset 0 2px 3px #ddd;
+}
+
+:local(.loginHeader){
+    height: 50px;
+    background: #1c2b34;
+}
+
+:local(.twitchLoginHeader){
+    height: 50px;
+    background: #2c2541;
+}
+
+:local(.leagueLoginHeader){
+    height: 50px;
+    background: #c9aa71;
+}
+
+:local(.closeButton){
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.35rem;
+    cursor: pointer;
+    color: white;
+}
+
+:local(.loginEntryDiv){
+    padding: 10px 30px;
+}
+
+:local(.loginEntryDiv label){
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+:local(.loginEntryDiv input){
+    height: 23px;
+    width: 60%;
+    padding-left: 10px;
+}
+
+:local(.buttonDiv){
+    height: 45px;
+    padding: 0 40px;
+}
+
+:local(.buttonDiv button){
+    margin-right: 10px;
+}
+
+:local(.recommendationDiv){
+    margin: -5px 0 25px 0;
+    padding-left: 35px;
+}
+
+:local(.recommendationDiv i){
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+:local(.buttonDiv button){
+    padding: 8px;
+}
+
+:local(.submitButton){
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    background: #a9987b;
+    color: white;
+    cursor: pointer;
+}
+
+:local(.cancelButton){
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    background: #a9987b;
+    color: white;
+    cursor: pointer;
+}
+
+:local(.submitButton:hover){
+    background: #c2ae8c;
+}
+
+:local(.cancelButton:hover){
+    background: #c2ae8c;
+}
+
+:local(.leagueSubmitButton){
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    background: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+:local(.leagueCancelButton){
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    background: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+:local(.leagueSubmitButton:hover){
+    color: #c9aa71;
+}
+
+:local(.leagueCancelButton:hover){
+    color: #c9aa71;
+}
+
+:local(.twitchSubmitButton){
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    background: #7d5bbe;
+    color: white;
+    cursor: pointer;
+}
+
+:local(.twitchCancelButton){
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    background: #7d5bbe;
+    color: white;
+    cursor: pointer;
+}
+
+:local(.twitchSubmitButton:hover){
+    text-decoration: underline;
+}
+
+:local(.twitchCancelButton:hover){
+    text-decoration: underline;
+}
+
+:local(.stayLoggedDiv){
+    padding: 0 0 20px 40px;
+    margin-top: -8px;
+}
+
+:local(.stayLoggedDiv input){
+    display: inline-block;
+    vertical-align: middle;
+}
+
+:local(.leagueInput:focus){
+    outline: #c9aa71 auto 1px;
+}
+
+:local(.twitchInput:focus){
+    outline: #2c2541 auto 1px;
+}
+
+:local(.runescapeInput:focus){
+    outline: #1c2c35 auto 1px;
+}
+
+:local(.failMessage){
+    color: #d7232a;
+    padding-left: 32px;
+}

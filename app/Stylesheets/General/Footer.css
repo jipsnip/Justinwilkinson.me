@@ -1,0 +1,593 @@
+@media screen and (max-width: 599px) {
+    :local(.rsFooterMain) {
+        display: block;
+        position: absolute;
+        height: 172px;
+        width: 100%;
+        background: transparent url('../../images/FooterBackground.png') repeat-x 0 0;
+        min-width: 550px;
+    }
+
+    :local(.rsFooterMain:before) {
+        background: transparent url('../../images/FooterTopImage.png') repeat-x 0 0;
+        clear: both;
+        display: block;
+        content: '';
+        height: 52px;
+        box-shadow: 0 -4px 15px #000;
+    }
+
+    :local(.rsFooterMain:after) {
+        background: transparent url('../../images/FooterTopImage.png') repeat-x 0 0;
+        display: block;
+        content: '';
+        box-shadow: inset 0 5px 55px -10px #000;
+        height: 10px;
+        clear: both;
+    }
+
+    :local(.rsFooterDiv) {
+        height: 90px;
+        margin: 10px auto;
+        min-width: 300px;
+        width: 100%;
+    }
+
+    :local(.rsFooterCopyright) {
+        display: inline-block;
+        max-width: 300px;
+        min-width: 200px;
+        width: 60%;
+        font-size: .75rem;
+        line-height: 22px;
+        vertical-align: top;
+        margin: 10px;
+        padding: 5px 10px 5px 20px;
+        border-right: 1px solid #867458;
+        font-family: 'MuseoSans', 'serif';
+    }
+
+    :local(.rsFooterCopyright a:link), :local(.rsFooterCopyright a:visited) {
+        text-decoration: underline;
+        color: black;
+    }
+
+    :local(.rsFooterSocial) {
+        display: inline-block;
+        margin-top: 25px;
+        float: right;
+        padding-right: 40px;
+    }
+
+    :local(.rsSocialImage) {
+        height: 35px;
+    }
+
+    :local(.leagueFooterMain) {
+        height: 130px;
+        background-color: #121212;
+        box-shadow: 0 15px 5px 16px black;
+        position: relative;
+        z-index: 20;
+        width: 100%;
+        min-width: 550px;
+    }
+
+    :local(.linkedIn) {
+        color: #c9aa71;
+        font-size: 1.3rem;
+    }
+
+    :local(.linkedIn:hover) {
+        color: #f1e6d0;
+        cursor: pointer;
+    }
+
+    :local(.testLinkedIn:before) {
+        content: "\f0e1";
+    }
+
+    :local(.leagueFooterDiv) {
+        width: 100%;
+        display: inline-block;
+        height: 130px;
+    }
+
+    :local(.leagueFooterCopyright) {
+        color: #c9aa71;
+        font-size: .75rem;
+        padding: 27px 0 0 12px;
+        width: 65%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    :local(.leagueFooterCopyright a), :local(.leagueFooterCopyright a:visited) {
+        text-decoration: underline;
+        color: #c9aa71;
+    }
+
+    :local(.leagueFooterSocial) {
+        display: inline-block;
+        float: right;
+        margin: 50px 30px 0 0;
+    }
+
+    :local(.leagueContact) {
+        display: inline-block;
+    }
+
+    :local(.leagueContact a), :local(.leagueContact a:visited) {
+        text-decoration: underline;
+        color: #f1e6d0;
+        margin-left: 400px;
+        font-size: .85rem;
+        position: absolute;
+        bottom: 8px;
+        left: -30px;
+    }
+
+    :local(.twitchFooterMain) {
+        height: 60px;
+        background-color: #392e5c;
+        box-shadow: 0 15px 5px 16px black;
+        position: relative;
+        z-index: 20;
+        min-width: 500px;
+    }
+
+    :local(.twitchFooterDiv) {
+        width: 100%;
+        max-width: 410px;
+        display: inline-block;
+        height: 60px;
+    }
+
+    :local(.twitchFooterSocial) {
+        display: inline-block;
+        float: right;
+        padding-top: 20px;
+    }
+
+    :local(.twitchLinkedIn) {
+        color: #b19dd8;
+        font-size: 1.35rem;
+        cursor: pointer;
+    }
+
+    :local(.twitchGitHub) {
+        color: #b19dd8;
+        margin-right: 8px;
+        font-size: 1.35rem;
+        cursor: pointer;
+    }
+
+    :local(.twitchLinkedIn:hover) {
+        color: #FFFFFF;
+    }
+
+    :local(.twitchGitHub:hover) {
+        color: #FFFFFF;
+    }
+
+    :local(.twitchContact) {
+        display: inline-block;
+        margin-left: 50%;
+        padding-top: 33px;
+    }
+
+    :local(.twitchContact a) {
+        color: #b19dd8;
+        text-decoration: none;
+    }
+
+    :local(.twitchContact a:hover) {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+
+    :local(.twitchContact a:visited) {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    :local(.rsFooterMain) {
+        display: block;
+        height: 172px;
+        width: 100%;
+        background: transparent url('../../images/FooterBackground.png') repeat-x 0 0;
+        min-width: 600px;
+    }
+
+    :local(.rsFooterMain:before) {
+        background: transparent url('../../images/FooterTopImage.png') repeat-x 0 0;
+        clear: both;
+        display: block;
+        content: '';
+        height: 52px;
+        box-shadow: 0 -4px 15px #000;
+    }
+
+    :local(.rsFooterMain:after) {
+        background: transparent url('../../images/FooterTopImage.png') repeat-x 0 0;
+        display: block;
+        content: '';
+        box-shadow: inset 0 5px 55px -10px #000;
+        height: 10px;
+        clear: both;
+    }
+
+    :local(.rsFooterDiv) {
+        height: 90px;
+        margin: 10px auto;
+        width: 100%;
+        min-width: 600px;
+        max-width: 800px;
+    }
+
+    :local(.footerText) {
+        /* display: inline-block;
+         max-width: 250px;
+         font-size: .75rem;
+         line-height: 22px;
+         vertical-align: top;
+         margin: 10px;
+         padding: 5px 10px 5px 20px;
+         border-left: 1px solid #867458;
+         font-family: 'MuseoSans', 'serif';*/
+    }
+
+    :local(.rsFooterCopyright) {
+        display: inline-block;
+        max-width: 350px;
+        font-size: .75rem;
+        line-height: 22px;
+        vertical-align: top;
+        margin: 10px;
+        padding: 5px 10px 5px 20px;
+        border-right: 1px solid #867458;
+        font-family: 'MuseoSans', 'serif';
+    }
+
+    :local(.rsFooterCopyright a:link), :local(.rsFooterCopyright a:visited) {
+        text-decoration: underline;
+        color: black;
+    }
+
+    :local(.rsFooterSocial) {
+        display: inline-block;
+        margin-top: 25px;
+        float: right;
+    }
+
+    :local(.rsSocialImage) {
+        height: 35px;
+    }
+
+    :local(.leagueFooterMain) {
+        height: 130px;
+        background-color: #121212;
+        box-shadow: 0 15px 5px 16px black;
+        position: relative;
+        z-index: 20;
+        min-width: 650px;
+    }
+
+    :local(.linkedIn) {
+        color: #c9aa71;
+        font-size: 1.3rem;
+    }
+
+    :local(.linkedIn:hover) {
+        color: #f1e6d0;
+        cursor: pointer;
+    }
+
+    :local(.testLinkedIn:before) {
+        content: "\f0e1";
+    }
+
+    :local(.leagueFooterDiv) {
+        width: 100%;
+        max-width: 1920px;
+        display: inline-block;
+        height: 130px;
+    }
+
+    :local(.leagueFooterCopyright) {
+        color: #c9aa71;
+        width: 500px;
+        font-size: .75rem;
+        margin: 0;
+        padding: 40px 0 0 10px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    :local(.leagueFooterCopyright a), :local(.leagueFooterCopyright a:visited) {
+        text-decoration: underline;
+        color: #c9aa71;
+    }
+
+    :local(.leagueFooterSocial) {
+        display: inline-block;
+        float: right;
+        margin: 53px 30px 0 0;
+    }
+
+    :local(.leagueContact) {
+        display: inline-block;
+    }
+
+    :local(.leagueContact a), :local(.leagueContact a:visited) {
+        text-decoration: underline;
+        color: #f1e6d0;
+        margin-left: 400px;
+        font-size: .85rem;
+        position: absolute;
+        bottom: 8px;
+        left: 120px;
+    }
+
+    :local(.twitchFooterMain) {
+        height: 60px;
+        background-color: #392e5c;
+        box-shadow: 0 15px 5px 16px black;
+        position: relative;
+        z-index: 20;
+        min-width: 750px;
+    }
+
+    :local(.twitchFooterDiv) {
+        width: 100%;
+        display: inline-block;
+        height: 60px;
+    }
+
+    :local(.twitchFooterSocial) {
+        display: inline-block;
+        float: right;
+        margin: 20px 120px 0 0;
+    }
+
+    :local(.twitchLinkedIn) {
+        color: #b19dd8;
+        font-size: 1.35rem;
+        cursor: pointer;
+    }
+
+    :local(.twitchGitHub) {
+        color: #b19dd8;
+        margin-right: 8px;
+        font-size: 1.35rem;
+        cursor: pointer;
+    }
+
+    :local(.twitchLinkedIn:hover) {
+        color: #FFFFFF;
+    }
+
+    :local(.twitchGitHub:hover) {
+        color: #FFFFFF;
+    }
+
+    :local(.twitchContact) {
+        display: inline-block;
+        margin-left: 50%;
+        padding-top: 40px;
+    }
+
+    :local(.twitchContact a) {
+        color: #b19dd8;
+        text-decoration: none;
+    }
+
+    :local(.twitchContact a:hover) {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+
+    :local(.twitchContact a:visited) {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.rsFooterMain:before) {
+        background: transparent url('../../images/FooterTopImage.png') repeat-x 0 0;
+        clear: both;
+        display: block;
+        content: '';
+        height: 52px;
+        box-shadow: 0 -4px 15px #000;
+    }
+
+    :local(.rsFooterMain:after) {
+        background: transparent url('../../images/FooterTopImage.png') repeat-x 0 0;
+        display: block;
+        content: '';
+        box-shadow: inset 0 5px 55px -10px #000;
+        height: 10px;
+        clear: both;
+    }
+
+    :local(.rsFooterMain) {
+        display: block;
+        height: 172px;
+        width: 100%;
+        background: transparent url('../../images/FooterBackground.png') repeat-x 0 0;
+        min-width: 1302px;
+    }
+
+    :local(.rsFooterDiv) {
+        height: 90px;
+        margin: 10px auto;
+        max-width: 800px;
+    }
+
+    :local(.footerText) {
+        /* display: inline-block;
+         max-width: 250px;
+         font-size: .75rem;
+         line-height: 22px;
+         vertical-align: top;
+         margin: 10px;
+         padding: 5px 10px 5px 20px;
+         border-left: 1px solid #867458;
+         font-family: 'MuseoSans', 'serif';*/
+    }
+
+    :local(.rsFooterCopyright) {
+        display: inline-block;
+        max-width: 250px;
+        font-size: .75rem;
+        line-height: 22px;
+        vertical-align: top;
+        margin: 10px;
+        padding: 5px 10px 5px 20px;
+        border-right: 1px solid #867458;
+        font-family: 'MuseoSans', 'serif';
+    }
+
+    :local(.rsFooterCopyright a:link), :local(.rsFooterCopyright a:visited) {
+        text-decoration: underline;
+        color: black;
+    }
+
+    :local(.rsFooterSocial) {
+        display: inline-block;
+        margin-top: 25px;
+        float: right;
+    }
+
+    :local(.rsSocialImage) {
+        height: 35px;
+    }
+
+    :local(.leagueFooterMain) {
+        height: 130px;
+        background-color: #121212;
+        box-shadow: 0 15px 5px 16px black;
+        position: relative;
+        z-index: 20;
+        min-width: 1750px;
+    }
+
+    :local(.linkedIn) {
+        color: #c9aa71;
+        font-size: 1.3rem;
+    }
+
+    :local(.linkedIn:hover) {
+        color: #f1e6d0;
+        cursor: pointer;
+    }
+
+    :local(.testLinkedIn:before) {
+        content: "\f0e1";
+    }
+
+    :local(.leagueFooterDiv) {
+        width: 100%;
+        max-width: 1920px;
+        display: inline-block;
+        height: 130px;
+    }
+
+    :local(.leagueFooterCopyright) {
+        color: #c9aa71;
+        width: 500px;
+        font-size: .75rem;
+        margin: 25px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    :local(.leagueFooterCopyright a), :local(.leagueFooterCopyright a:visited) {
+        text-decoration: underline;
+        color: #c9aa71;
+    }
+
+    :local(.leagueFooterSocial) {
+        display: inline-block;
+        float: right;
+        margin: 30px 120px 0 0;
+    }
+
+    :local(.leagueContact) {
+        display: inline-block;
+    }
+
+    :local(.leagueContact a), :local(.leagueContact a:visited) {
+        text-decoration: underline;
+        color: #f1e6d0;
+        margin-left: 400px;
+        font-size: .85rem;
+        position: absolute;
+        bottom: 8px;
+    }
+
+    :local(.twitchFooterMain) {
+        height: 60px;
+        background-color: #392e5c;
+        box-shadow: 0 15px 5px 16px black;
+        position: relative;
+        z-index: 20;
+        min-width: 1490px;
+    }
+
+    :local(.twitchFooterDiv) {
+        width: 100%;
+        max-width: 1920px;
+        display: inline-block;
+        height: 60px;
+    }
+
+    :local(.twitchFooterSocial) {
+        display: inline-block;
+        float: right;
+        margin: 20px 120px 0 0;
+    }
+
+    :local(.twitchLinkedIn) {
+        color: #b19dd8;
+        font-size: 1.35rem;
+        cursor: pointer;
+    }
+
+    :local(.twitchGitHub) {
+        color: #b19dd8;
+        margin-right: 8px;
+        font-size: 1.35rem;
+        cursor: pointer;
+    }
+
+    :local(.twitchLinkedIn:hover) {
+        color: #FFFFFF;
+    }
+
+    :local(.twitchGitHub:hover) {
+        color: #FFFFFF;
+    }
+
+    :local(.twitchContact) {
+        display: inline-block;
+        margin-left: 50%;
+        padding-top: 40px;
+    }
+
+    :local(.twitchContact a) {
+        color: #b19dd8;
+        text-decoration: none;
+    }
+
+    :local(.twitchContact a:hover) {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+
+    :local(.twitchContact a:visited) {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,139 @@
+@media screen and (max-width: 599px) {
+    :local(.userInfoContainer) {
+        display: inline-block;
+        width: auto;
+        overflow: hidden;
+    }
+
+    :local(.minimizedUserInfoContainer) {
+        display: block;
+        width: auto;
+        overflow: hidden;
+    }
+
+    :local(.userInfo), :local(.minimizedUserInfo) {
+        display: inline-block;
+        margin: 30px auto;
+        max-width: 200px;
+        height: 40px;
+        padding: 6px;
+        border: 1px solid #7d5bbe;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    :local(.userImage), :local(.minimizedUserImage) {
+        display: inline-block;
+        height: 40px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        padding: 0;
+    }
+
+    :local(.userText) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    :local(.userInfoContainer) {
+        display: inline-block;
+        width: auto;
+        overflow: hidden;
+    }
+
+    :local(.minimizedUserInfoContainer) {
+        display: block;
+        width: auto;
+        overflow: hidden;
+    }
+
+    :local(.userInfo), :local(.minimizedUserInfo) {
+        display: inline-block;
+        margin: 30px auto;
+        max-width: 200px;
+        height: 40px;
+        padding: 6px;
+        border: 1px solid #7d5bbe;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    :local(.userImage), :local(.minimizedUserImage) {
+        display: inline-block;
+        height: 40px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        padding: 0;
+    }
+
+    :local(.userText) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.userInfoContainer) {
+        display: block;
+        width: 240px;
+        transition: width 1s ease-in-out;
+        overflow: hidden;
+    }
+
+    :local(.minimizedUserInfoContainer) {
+        display: block;
+        overflow: hidden;
+        width: 50px;
+        transition: width 1s ease-in-out;
+    }
+
+    :local(.userInfo) {
+        display: block;
+        margin: 20px auto;
+        max-width: 200px;
+        height: 40px;
+        padding: 6px;
+        border: 1px solid #7d5bbe;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: border 1s ease-in-out, padding 1s ease-in-out, margin 1s ease-in-out;
+    }
+
+    :local(.minimizedUserInfo) {
+        display: block;
+        margin: 20px auto;
+        max-width: 200px;
+        height: 40px;
+        padding: 0 0 0 3px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: border 1s ease-in-out, padding 1s ease-in-out, margin 1s ease-in-out;
+    }
+
+    :local(.userImage) {
+        display: inline-block;
+        height: 40px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        padding: 0;
+        transition: border 1s ease-in-out, height 1s ease-in-out, padding 1s ease-in-out;
+    }
+
+    :local(.minimizedUserImage) {
+        border: 1px solid #7d5bbe;
+        border-radius: 8px;
+        height: 33px;
+        padding: 2px;
+        transition: border 1s ease-in-out, height 1s ease-in-out, padding 1s ease-in-out;
+    }
+
+    :local(.userText) {
+        color: #FFFFFF;
+        vertical-align: top;
+        display: inline-block;
+        padding-top: 13px;
+        margin-left: 12px;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    }
+}

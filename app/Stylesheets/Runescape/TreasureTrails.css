@@ -1,0 +1,800 @@
+@media screen and (max-width: 599px) {
+    :local(.treasureTrailMain) {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    :local(.treasureTrailCategory) {
+        font-size: 20px;
+        line-height: 22px;
+        border-bottom: solid 1px #cccccc;
+        padding-bottom: 3px;
+        max-width: 800px;
+        margin: 10px auto;
+    }
+
+    :local(.treasureTrailOption) {
+        background: #fafafa;
+        color: #404040;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.03);
+        letter-spacing: 1px;
+        line-height: 1.4em;
+        font-family: 'League Spartan', sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+        height: 100px;
+        width: 200px;
+        display: inline-flex;
+        margin: 7px;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    :local(.treasureTrailOption:hover) {
+        background: #f2f2f2;
+    }
+
+    :local(.treasureTrailOptionText) {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 11.75px;
+        font-weight: 700;
+    }
+
+    :local(.infoContainer) {
+        background-color: #17252c;
+        border-radius: 4px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    }
+
+    :local(.coordinateContainer), :local(.crypticContainer) {
+        width: 100%;
+        border: none;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+
+    :local(.coordinateContainerHeader), :local(.crypticContainerHeader) {
+        clear: both;
+        height: 45px;
+        background-image: url('../../images/TableMain.png');
+        color: #e1bb34;
+    }
+
+    :local(.coordinateContainerMain), :local(.crypticContainerMain) {
+        background-image: url('../../images/TableBackground.jpg');
+        border: 1px solid #1F2833;
+        color: #7d8da5;
+        width: calc(100% - 2px);
+        float: left;
+        overflow: hidden;
+    }
+
+    :local(.coordinateCoordinates) {
+        display: inline-block;
+        margin: 4px 10px;
+        float: left;
+        text-transform: capitalize;
+    }
+
+    :local(.coordinateIcons), :local(.crypticIcons) {
+        margin: 8px 10px 0 10px;
+        float: right;
+    }
+
+    :local(.coordinateImageContainer) {
+        padding: 10px;
+        margin: 0 auto -4px auto;
+        width: 80%;
+        display: block;
+        border-bottom: 1px solid #7d8da5;
+    }
+
+    :local(.crypticImageContainer){
+        padding: 10px;
+        width: 70%;
+        display: block;
+        border-bottom: 1px solid #7d8da5;
+        margin: 0 auto -4px auto;
+    }
+
+    :local(.coordinateImage), :local(.crypticImage) {
+        margin: auto;
+        display: block;
+        border-radius: 4px;
+        width: 80%;
+    }
+
+    :local(.coordinateImage:hover) {
+        opacity: 0.8;
+    }
+
+    :local(.coordinateDescription) {
+        float: none;
+        clear: none;
+        margin: 20px auto;
+        width: 65%;
+    }
+
+    :local(.coordinateDescriptionText) {
+        margin: 0 auto;
+        width: 375px;
+        text-indent: 1cm;
+    }
+
+    :local(.filterBar) {
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom: 1px solid black;
+        background-color: #0d1c29;
+        height: auto;
+        line-height: 50px;
+        padding: 0 20px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        overflow: hidden;
+    }
+
+    :local(.filterBar select) {
+        min-width: 75px;
+    }
+
+    :local(.mainButton) {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 6px;
+        border-radius: 4px;
+        background-color: #f5f5f5;
+        border: 1px solid #dddddd;
+        color: black;
+        margin: 50px 0 50px 20px;
+    }
+
+    :local(.mainButton:hover) {
+        background-color: #f2f2f2;
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1),
+        0 0 16px rgba(0, 0, 0, 0.1);
+    }
+
+    :local(.anagramLabel) {
+        font-weight: bold;
+        padding: 20px;
+        height: 10px;
+        background-image: url('../../images/TableMain.png');
+        border: 1px solid black;
+        border-bottom: 1px solid #6a7382;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    :local(.anagramContainer){
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        height: 124px;
+        background-image: url('../../images/TableBackground.jpg');
+        color: #e1bb34;
+        border-bottom: 1px solid #6a7382;
+        overflow: hidden;
+    }
+
+    :local(.anagramLabelContainer){
+        width: calc(100% - 40px);
+        margin: 20px auto 0 auto;
+        height: 175px;
+        background-image: url('../../images/TableBackground.jpg');
+        color: #e1bb34;
+        border-bottom: 1px solid #6a7382;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        overflow: hidden;
+    }
+
+    :local(.anagramAnagram){
+        width: calc(10% + 30px);
+        display: inline-block;
+        padding: 5px;
+        font-size: .9rem;
+        min-height: 114px;
+        border-right: 1px solid #6a7382;
+        border-left: 1px solid #6a7382;
+        vertical-align: top;
+    }
+
+    :local(.anagramSolution){
+        width: calc(10% + 30px);
+        display: inline-block;
+        padding: 5px;
+        margin: 0 auto;
+        min-height: 114px;
+        border-right: 1px solid #6a7382;
+        vertical-align: top;
+    }
+
+    :local(.anagramLocationContainer){
+        width: calc(80% - 85px);
+        display: inline-block;
+        min-height: 125px;
+        border-right: 1px solid #6a7382;
+    }
+
+    :local(.anagramLocation){
+        width: calc(80% - 40px);
+        height: 85px;
+        padding: 10px;
+        font-size: .9rem;
+        display: inline-block;
+    }
+
+    :local(.anagramChallenge){
+        width: 9%;
+        height: 40px;
+        padding-right: 30px;
+        padding-top: 50px;
+        float: right;
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        align-content: right;
+    }
+
+    :local(.crypticInfo) {
+        width: calc(100% - 60px);
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        vertical-align: top;
+    }
+
+    :local(.crypticDescription) {
+        display: block;
+        width: calc(100% - 30px);
+        height: auto;
+        padding: 30px 15px;
+        border-bottom: 1px solid #7d8da5;
+        text-indent: 1cm;
+    }
+
+    :local(.crypticSolution) {
+        display: inline-block;
+        height: auto;
+        width: calc(100% - 30px);
+        padding: 15px;
+        text-indent: 1cm;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    :local(.treasureTrailMain) {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    :local(.treasureTrailCategory){
+        font-size: 20px;
+        line-height: 22px;
+        border-bottom: solid 1px #cccccc;
+        padding-bottom: 3px;
+        max-width: 800px;
+        margin: 10px auto;
+    }
+
+    :local(.treasureTrailOption){
+        background: #fafafa;
+        color: #404040;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px -1px rgba(0,0,0,0.12),
+        0 2px 6px rgba(0,0,0,0.03);
+        letter-spacing: 1px;
+        line-height: 1.4em;
+        font-family: 'League Spartan',sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+        height: 100px;
+        width: 200px;
+        display: inline-flex;
+        margin: 7px;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    :local(.treasureTrailOption:hover){
+        background: #f2f2f2;
+    }
+
+    :local(.treasureTrailOptionText){
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 11.75px;
+        font-weight: 700;
+    }
+
+    :local(.infoContainer){
+        background-color: #17252c;
+        border-radius: 4px;
+        padding-bottom: 10px;
+        min-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    }
+
+    :local(.coordinateContainer), :local(.crypticContainer){
+        width: calc(100% - 40px);
+        min-width: 0!important;
+        border: 1px solid black;
+        margin: 20px auto;
+        overflow: auto;
+    }
+
+    :local(.coordinateContainerHeader), :local(.crypticContainerHeader){
+        clear: both;
+        height: 45px;
+        background-image: url('../../images/TableMain.png');
+        color: #e1bb34;
+    }
+
+    :local(.coordinateContainerMain), :local(.crypticContainerMain){
+        background-image: url('../../images/TableBackground.jpg');
+        border: 1px solid #1F2833;
+        color: #7d8da5;
+        overflow: hidden;
+    }
+
+    :local(.coordinateCoordinates) {
+        display: inline-block;
+        margin: 4px 10px;
+        float: left;
+        text-transform: capitalize;
+    }
+
+    :local(.coordinateIcons), :local(.crypticIcons){
+        margin: 8px 10px 0 10px;
+        float: right;
+    }
+
+    :local(.coordinateImageContainer){
+        padding: 10px;
+        margin-bottom: -4px;
+        width: 60%;
+        display: inline-block;
+        border-right: 1px solid #7d8da5;
+    }
+
+    :local(.crypticImageContainer){
+        padding: 10px;
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        border-bottom: 1px solid #7d8da5;
+    }
+
+    :local(.coordinateImage), :local(.crypticImage){
+        margin: auto;
+        display: block;
+        max-width: calc(100% - 20px);
+        border-radius: 4px;
+    }
+
+    :local(.coordinateImage:hover){
+        opacity: 0.8;
+    }
+
+    :local(.coordinateDescription){
+        float: none;
+        clear: none;
+        display: inline-block;
+        padding-left: 15px;
+        vertical-align: top;
+        margin-top: 20px;
+        width: calc(40% - 50px);
+    }
+
+    :local(.coordinateDescriptionText){
+        margin: 0 auto;
+        width: auto;
+        text-indent: 1cm;
+    }
+
+    :local(.filterBar){
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom: 1px solid black;
+        background-color: #0d1c29;
+        height: auto;
+        line-height: 50px;
+        padding: 0 20px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        overflow: hidden;
+    }
+
+    :local(.filterBar select){
+        min-width: 75px;
+    }
+
+    :local(.mainButton){
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 6px;
+        border-radius: 4px;
+        background-color: #f5f5f5;
+        border: 1px solid #dddddd;
+        color: black;
+        margin: 50px 0 50px 20px;
+    }
+
+    :local(.mainButton:hover){
+        background-color: #f2f2f2;
+        box-shadow: inset 0 0 8px rgba(0,0,0,0.1),
+        0 0 16px rgba(0,0,0,0.1);
+    }
+
+    :local(.anagramLabel){
+        font-weight: bold;
+        padding: 20px;
+        height: 10px;
+        background-image:  url('../../images/TableMain.png');
+        border: 1px solid black;
+        border-bottom: 1px solid #6a7382;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    :local(.anagramContainer){
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        height: 124px;
+        background-image: url('../../images/TableBackground.jpg');
+        color: #e1bb34;
+        border-right: 1px solid #6a7382;
+        border-left: 1px solid #6a7382;
+        border-bottom: 1px solid #6a7382;
+    }
+
+    :local(.anagramLabelContainer){
+        width: calc(100% - 40px);
+        margin: 20px auto 0 auto;
+        height: 175px;
+        background-image: url('../../images/TableBackground.jpg');
+        color: #e1bb34;
+        border-right: 1px solid #6a7382;
+        border-left: 1px solid #6a7382;
+        border-bottom: 1px solid #6a7382;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    :local(.anagramAnagram){
+        width: 10%;
+        display: inline-block;
+        padding: 20px;
+        min-height: 84px;
+        border-right: 1px solid #6a7382;
+        vertical-align: top;
+    }
+
+    :local(.anagramSolution){
+        width: 10%;
+        display: inline-block;
+        padding: 20px;
+        margin: 0 auto;
+        min-height: 84px;
+        border-right: 1px solid #6a7382;
+        vertical-align: top;
+    }
+
+    :local(.anagramLocationContainer){
+        width: calc(80% - 82px);
+        display: inline-block;
+        min-height: 125px;
+    }
+
+    :local(.anagramLocation){
+        width: calc(80% - 40px);
+        height: 85px;
+        padding: 20px;
+        display: inline-block;
+    }
+
+    :local(.anagramChallenge){
+        width: 9%;
+        height: 85px;
+        padding-right: 30px;
+        padding-top: 50px;
+        float: right;
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        align-content: right;
+    }
+
+    :local(.crypticInfo) {
+        width: calc(100% - 60px);
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        vertical-align: top;
+    }
+
+    :local(.crypticDescription) {
+        display: block;
+        width: calc(100% - 30px);
+        height: auto;
+        padding: 30px 15px;
+        border-bottom: 1px solid #7d8da5;
+        text-indent: 1cm;
+    }
+
+    :local(.crypticSolution) {
+        display: inline-block;
+        height: auto;
+        width: calc(100% - 30px);
+        padding: 15px;
+        text-indent: 1cm;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.treasureTrailMain) {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    :local(.treasureTrailCategory) {
+        font-size: 20px;
+        line-height: 22px;
+        border-bottom: solid 1px #cccccc;
+        padding-bottom: 3px;
+        max-width: 800px;
+        margin: 10px auto;
+    }
+
+    :local(.treasureTrailOption) {
+        background: #fafafa;
+        color: #404040;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.03);
+        letter-spacing: 1px;
+        line-height: 1.4em;
+        font-family: 'League Spartan', sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+        height: 100px;
+        width: 200px;
+        display: inline-flex;
+        margin: 7px;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    :local(.treasureTrailOption:hover) {
+        background: #f2f2f2;
+    }
+
+    :local(.treasureTrailOptionText) {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 11.75px;
+        font-weight: 700;
+    }
+
+    :local(.infoContainer) {
+        background-color: #17252c;
+        border-radius: 4px;
+        padding-bottom: 10px;
+        min-width: 1300px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    }
+
+    :local(.coordinateContainer), :local(.crypticContainer) {
+        width: 64%;
+        min-width: 830px;
+        border: 1px solid black;
+        margin: 20px auto;
+        overflow: auto;
+    }
+
+    :local(.coordinateContainerHeader), :local(.crypticContainerHeader) {
+        clear: both;
+        height: 45px;
+        background-image: url('../../images/TableMain.png');
+        color: #e1bb34;
+    }
+
+    :local(.coordinateContainerMain), :local(.crypticContainerMain) {
+        background-image: url('../../images/TableBackground.jpg');
+        border: 1px solid #1F2833;
+        color: #7d8da5;
+        overflow: hidden;
+    }
+
+    :local(.coordinateCoordinates) {
+        display: inline-block;
+        margin: 4px 10px;
+        float: left;
+        text-transform: capitalize;
+    }
+
+    :local(.coordinateIcons), :local(.crypticIcons) {
+        margin: 8px 10px 0 10px;
+        float: right;
+    }
+
+    :local(.coordinateImageContainer), :local(.crypticImageContainer) {
+        padding: 10px;
+        margin-bottom: -4px;
+        width: 422px;
+        display: inline-block;
+        border-right: 1px solid #7d8da5;
+    }
+
+    :local(.coordinateImage), :local(.crypticImage) {
+        margin: auto;
+        display: block;
+        border-radius: 4px;
+    }
+
+    :local(.coordinateImage:hover) {
+        opacity: 0.8;
+    }
+
+    :local(.coordinateDescription) {
+        float: right;
+        clear: right;
+        margin-top: 50px;
+        width: calc(100% - 446px);
+    }
+
+    :local(.coordinateDescriptionText) {
+        margin: 0 auto;
+        width: 375px;
+        text-indent: 1cm;
+    }
+
+    :local(.filterBar) {
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom: 1px solid black;
+        background-color: #0d1c29;
+        height: auto;
+        line-height: 50px;
+        padding: 0 20px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        overflow: hidden;
+    }
+
+    :local(.filterBar select) {
+        min-width: 75px;
+    }
+
+    :local(.mainButton) {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 6px;
+        border-radius: 4px;
+        background-color: #f5f5f5;
+        border: 1px solid #dddddd;
+        color: black;
+        margin: 50px 0 50px 20px;
+    }
+
+    :local(.mainButton:hover) {
+        background-color: #f2f2f2;
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1),
+        0 0 16px rgba(0, 0, 0, 0.1);
+    }
+
+    :local(.anagramLabel) {
+        font-weight: bold;
+        padding: 20px;
+        height: 10px;
+        background-image: url('../../images/TableMain.png');
+        border: 1px solid black;
+        border-bottom: 1px solid #6a7382;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    :local(.anagramContainer) {
+        min-width: 1000px;
+        width: 65%;
+        margin: 0 auto;
+        height: 125px;
+        background-image: url('../../images/TableBackground.jpg');
+        color: #e1bb34;
+        border-right: 1px solid #6a7382;
+        border-left: 1px solid #6a7382;
+        border-bottom: 1px solid #6a7382;
+    }
+
+    :local(.anagramLabelContainer) {
+        min-width: 1000px;
+        width: 65%;
+        margin: 20px auto 0 auto;
+        height: 175px;
+        background-image: url('../../images/TableBackground.jpg');
+        color: #e1bb34;
+        border-right: 1px solid #6a7382;
+        border-left: 1px solid #6a7382;
+        border-bottom: 1px solid #6a7382;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    :local(.anagramAnagram) {
+        width: 10%;
+        display: inline-block;
+        padding: 20px;
+        height: 85px;
+        border-right: 1px solid #6a7382;
+        vertical-align: top;
+    }
+
+    :local(.anagramSolution) {
+        width: 10%;
+        display: inline-block;
+        padding: 20px;
+        margin: 0 auto;
+        height: 85px;
+        border-right: 1px solid #6a7382;
+        vertical-align: top;
+    }
+
+    :local(.anagramLocationContainer) {
+        width: calc(80% - 82px);
+        display: inline-block;
+        height: 125px;
+    }
+
+    :local(.anagramLocation) {
+        width: calc(85% - 40px);
+        height: 85px;
+        padding: 20px;
+        display: inline-block;
+    }
+
+    :local(.anagramChallenge) {
+        width: 9%;
+        height: 85px;
+        padding-right: 30px;
+        padding-top: 50px;
+        float: right;
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        align-content: right;
+    }
+
+    :local(.crypticInfo) {
+        width: calc(100% - 450px);
+        display: inline-block;
+        height: 244px;
+        vertical-align: top;
+    }
+
+    :local(.crypticDescription) {
+        display: inline-block;
+        width: calc(100% - 30px);
+        height: 91px;
+        padding: 15px;
+        border-bottom: 1px solid #7d8da5;
+        text-indent: 1cm;
+    }
+
+    :local(.crypticSolution) {
+        display: inline-block;
+        height: 92px;
+        width: calc(100% - 30px);
+        padding: 15px;
+        text-indent: 1cm;
+    }
+}

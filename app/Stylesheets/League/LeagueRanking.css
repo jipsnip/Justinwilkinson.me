@@ -1,0 +1,99 @@
+:local(.seasonLabel){
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    width: 75%;
+    border-bottom: 1px solid #f1e6d0;
+    margin: 0 auto;
+}
+
+:local(.rankDiv){
+    padding-left: 35px;
+    margin-top: 10px;
+    display: flex;
+    font-family: "BeaufortLoL", "Times New Roman", "sans-serif";
+    color: #c9aa71;
+}
+
+:local(.leagueQueue){
+    font-size: 12px;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+:local(.rankImage){
+    height: 50px;
+}
+
+:local(.winLoss){
+    display: inline-block;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+:local(.leaguePoints){
+    display: inline-block;
+    position: absolute;
+    color: #f1e6d0;
+    top: 20px;
+    left: 20px;
+    width: 75px;
+}
+
+:local(.leaguePointsLabel){
+    color: #c9aa71;
+    padding-left: 6px;
+}
+
+:local(.miniSeriesDiv){
+    display: inline-block;
+    position: absolute;
+    top: 37px;
+    left: 15px;
+    font-size: .75rem;
+    width: 150px;
+}
+
+:local(.miniSeriesLabel){
+    position: relative;
+    top: 3px;
+    left: -5px;
+}
+
+:local(.miniSeriesImages){
+    position: relative;
+    top: 5px;
+}
+
+:local(.mainRow){
+    margin-top: 10px;
+    padding-left: 30px;
+    color: #f1e6d0;
+    font-size: .85rem;
+}
+
+:local(.mainRow span){
+    display: inline-block;
+}
+
+:local(.queue), :local(.rank){
+    margin-right: 35px;
+}
+
+:local(.wl){
+    margin-right: 25px;
+}
+
+:local(.win){
+    color: #49b04f;
+    padding-right: 3px;
+}
+
+:local(.loss){
+    color: #e2575c;
+    padding-left: 3px;
+}
+
+:local(.seperator){
+    color: #f1e6d0;
+}

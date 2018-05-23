@@ -1,0 +1,457 @@
+@media screen and (max-width: 599px) {
+    :local(.inputContainer) {
+        height: auto;
+        background: #121212;
+        width: calc(100% - 60px);
+        min-width: 490px;
+        padding: 20px 20px 35px 40px;
+    }
+
+    :local(.inputDiv) {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 700;
+    }
+
+    :local(.recommendation) {
+        display: block;
+        color: #f1e6d0;
+        z-index: 201;
+        padding: 3px 5px;
+    }
+
+    :local(.recommendation:hover) {
+        background: #707070;
+    }
+
+    :local(.recommendationDiv) {
+        position: absolute;
+        left: 0;
+        top: 36px;
+        width: calc(100% - 80px);
+        background-color: #333333;
+        border: 1px solid #f1e6d0;
+        box-shadow: 0 9px 9px black;
+        z-index: 200;
+    }
+
+    :local(.enteredText) {
+        color: #f1e6d0;
+        display: inline;
+        cursor: pointer;
+    }
+
+    :local(.suggestedText) {
+        color: #c9aa71;
+        display: inline;
+        cursor: pointer;
+    }
+
+    :local(.rightContainer) {
+        float: right;
+        z-index: 204;
+        display: inline-block;
+    }
+
+    :local(.preferContainer) {
+        display: inline-block;
+        padding: 1px 14px 0 0;
+        cursor: pointer;
+        z-index: 205;
+    }
+
+    :local(.removeText) {
+        float: right;
+        cursor: pointer;
+    }
+
+    :local(.removeText:hover) {
+        color: red;
+    }
+
+    :local(.inputContainer form) {
+        display: inline-block;
+    }
+
+    :local(.inputContainer input[type="text"]) {
+        padding: 10px;
+        width: calc(100% - 100px);
+        background: #333333;
+        border: 1px solid #f1e6d0;
+        color: white;
+    }
+
+    :local(.inputContainer input[type="text"]:focus) {
+        outline: none;
+    }
+
+    :local(.inputContainer button) {
+        padding: 10px;
+        background: #262626;
+        margin-left: -1px;
+        color: white;
+        border: 1px solid #f1e6d0;
+        cursor: pointer;
+    }
+
+    :local(.inputContainer button:active), :local(.inputContainer button:hover) {
+        border: 1px solid #f1e6d0;
+        color: #c9aa71;
+    }
+
+    :local(.inputContainer button:focus) {
+        border: 1px solid #f1e6d0;
+        outline: none;
+    }
+
+    :local(.errorMessage) {
+        color: #e2575c;
+        margin: 12px 0 0 2px;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    :local(.regionList) {
+        display: inline-block;
+        vertical-align: top;
+        margin: 7px 14px 0 0;
+        padding: 0;
+        float: right;
+        border-radius: 4px;
+    }
+
+    :local(.region) {
+        display: inline-block;
+        padding: 5px 8px;
+        background: linear-gradient(#333333, #444444);
+        color: white;
+        box-shadow: inset 1px 0 rgba(255, 255, 255, 0.1), inset -1px 0 rgba(0, 0, 0, 0.15);
+        font-size: .9rem;
+    }
+
+    :local(.activeRegion) {
+        display: inline-block;
+        color: white;
+        padding: 5px 8px;
+        background: linear-gradient(#505050, #707070);
+        box-shadow: inset 1px 0 rgba(255, 255, 255, 0.1), inset -1px 0 rgba(0, 0, 0, 0.15);
+        font-size: .9rem;
+    }
+
+    :local(.leftmostRegion) {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    :local(.rightmostRegion) {
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    :local(.inputContainer) {
+        height: auto;
+        background: #121212;
+        min-width: 590px;
+        width: calc(100% - 60px);
+        padding: 20px 20px 35px 40px;
+    }
+
+    :local(.inputDiv) {
+        display: inline-block;
+        width: calc(100% - 2px);
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 700;
+    }
+
+    :local(.recommendation) {
+        display: block;
+        color: #f1e6d0;
+        z-index: 201;
+        padding: 3px 5px;
+    }
+
+    :local(.recommendation:hover) {
+        background: #707070;
+    }
+
+    :local(.recommendationDiv) {
+        position: absolute;
+        left: 0;
+        top: 36px;
+        width: calc(100% - 80px);
+        background-color: #333333;
+        border: 1px solid #f1e6d0;
+        box-shadow: 0 9px 9px black;
+        z-index: 200;
+    }
+
+    :local(.enteredText) {
+        color: #f1e6d0;
+        display: inline;
+        cursor: pointer;
+    }
+
+    :local(.suggestedText) {
+        color: #c9aa71;
+        display: inline;
+        cursor: pointer;
+    }
+
+    :local(.rightContainer) {
+        float: right;
+        z-index: 204;
+        display: inline-block;
+    }
+
+    :local(.preferContainer) {
+        display: inline-block;
+        padding: 1px 14px 0 0;
+        cursor: pointer;
+        z-index: 205;
+    }
+
+    :local(.removeText) {
+        float: right;
+        cursor: pointer;
+    }
+
+    :local(.removeText:hover) {
+        color: red;
+    }
+
+    :local(.inputContainer form) {
+        display: inline-block;
+    }
+
+    :local(.inputContainer input[type="text"]) {
+        padding: 10px;
+        width: calc(100% - 100px);
+        background: #333333;
+        border: 1px solid #f1e6d0;
+        color: white;
+    }
+
+    :local(.inputContainer input[type="text"]:focus) {
+        outline: none;
+    }
+
+    :local(.inputContainer button) {
+        padding: 10px;
+        background: #262626;
+        margin-left: -1px;
+        color: white;
+        border: 1px solid #f1e6d0;
+        cursor: pointer;
+    }
+
+    :local(.inputContainer button:active), :local(.inputContainer button:hover) {
+        border: 1px solid #f1e6d0;
+        color: #c9aa71;
+    }
+
+    :local(.inputContainer button:focus) {
+        border: 1px solid #f1e6d0;
+        outline: none;
+    }
+
+    :local(.errorMessage) {
+        color: #e2575c;
+        margin: 0px 50px;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    :local(.regionList) {
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+        margin: 7px 14px 0 0;
+        padding: 0;
+        border-radius: 4px;
+    }
+
+    :local(.region) {
+        display: inline-block;
+        padding: 5px 8px;
+        background: linear-gradient(#333333, #444444);
+        color: white;
+        box-shadow: inset 1px 0 rgba(255, 255, 255, 0.1), inset -1px 0 rgba(0, 0, 0, 0.15);
+        font-size: .9rem;
+        cursor: pointer;
+    }
+
+    :local(.activeRegion) {
+        display: inline-block;
+        color: white;
+        padding: 5px 8px;
+        background: linear-gradient(#505050, #707070);
+        box-shadow: inset 1px 0 rgba(255, 255, 255, 0.1), inset -1px 0 rgba(0, 0, 0, 0.15);
+        font-size: .9rem;
+    }
+
+    :local(.leftmostRegion) {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    :local(.rightmostRegion) {
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.inputContainer) {
+        height: 40px;
+        background: #121212;
+        width: calc(100% - 60px);
+        min-width: 1689px;
+        padding: 20px 20px 20px 40px;
+    }
+
+    :local(.inputDiv) {
+        display: inline-block;
+        max-width: 670px;
+        position: relative;
+        z-index: 700;
+    }
+
+    :local(.recommendation) {
+        display: block;
+        color: #f1e6d0;
+        z-index: 201;
+        padding: 3px 5px;
+    }
+
+    :local(.recommendation:hover) {
+        background: #707070;
+    }
+
+    :local(.recommendationDiv) {
+        position: absolute;
+        left: 0;
+        top: 36px;
+        width: 600px;
+        background-color: #333333;
+        border: 1px solid #f1e6d0;
+        box-shadow: 0 9px 9px black;
+        z-index: 200;
+    }
+
+    :local(.enteredText) {
+        color: #f1e6d0;
+        display: inline;
+        cursor: pointer;
+    }
+
+    :local(.suggestedText) {
+        color: #c9aa71;
+        display: inline;
+        cursor: pointer;
+    }
+
+    :local(.rightContainer) {
+        float: right;
+        z-index: 204;
+        display: inline-block;
+    }
+
+    :local(.preferContainer) {
+        display: inline-block;
+        padding: 1px 14px 0 0;
+        cursor: pointer;
+        z-index: 205;
+    }
+
+    :local(.removeText) {
+        float: right;
+        cursor: pointer;
+    }
+
+    :local(.removeText:hover) {
+        color: red;
+    }
+
+    :local(.inputContainer form) {
+        display: inline-block;
+    }
+
+    :local(.inputContainer input[type="text"]) {
+        padding: 10px;
+        width: 580px;
+        background: #333333;
+        border: 1px solid #f1e6d0;
+        color: white;
+    }
+
+    :local(.inputContainer input[type="text"]:focus) {
+        outline: none;
+    }
+
+    :local(.inputContainer button) {
+        padding: 10px;
+        background: #262626;
+        margin-left: -1px;
+        color: white;
+        border: 1px solid #f1e6d0;
+        cursor: pointer;
+    }
+
+    :local(.inputContainer button:active), :local(.inputContainer button:hover) {
+        border: 1px solid #f1e6d0;
+        color: #c9aa71;
+    }
+
+    :local(.inputContainer button:focus) {
+        border: 1px solid #f1e6d0;
+        outline: none;
+    }
+
+    :local(.errorMessage) {
+        color: #e2575c;
+        margin: 12px 50px;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    :local(.regionList) {
+        display: inline-block;
+        vertical-align: top;
+        margin: 7px 0 0 0;
+        padding: 0;
+        border-radius: 4px;
+    }
+
+    :local(.region) {
+        display: inline-block;
+        padding: 5px 8px;
+        background: linear-gradient(#333333, #444444);
+        color: white;
+        box-shadow: inset 1px 0 rgba(255, 255, 255, 0.1), inset -1px 0 rgba(0, 0, 0, 0.15);
+        font-size: .9rem;
+    }
+
+    :local(.activeRegion) {
+        display: inline-block;
+        color: white;
+        padding: 5px 8px;
+        background: linear-gradient(#505050, #707070);
+        box-shadow: inset 1px 0 rgba(255, 255, 255, 0.1), inset -1px 0 rgba(0, 0, 0, 0.15);
+        font-size: .9rem;
+    }
+
+    :local(.leftmostRegion) {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    :local(.rightmostRegion) {
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+}

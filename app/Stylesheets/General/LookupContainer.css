@@ -1,0 +1,265 @@
+:local(.generalInfoContainer) {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    width: calc(100% - 2px);
+    min-width: 548px;
+}
+
+:local(.generalLookup) {
+    padding: 20px;
+}
+
+:local(.generalLookupContainer){
+    position: relative;
+    z-index: 15;
+    overflow: visible;
+    display: inline-block;
+    width: 100%;
+}
+
+:local(.runescapeLookupContainer){
+    position: relative;
+    z-index: 15;
+    overflow: visible;
+    display: inline-block;
+    width: 100%;
+}
+
+:local(.inlineInput) {
+    display: block;
+    width: 100%;
+}
+
+:local(.blockInput) {
+    display: block;
+    width: 100%;
+}
+
+:local(.runescapeInfoContainer) {
+    background-image: url('../../images/MarbledBackground.png');
+    color: #e1bb34;
+    box-shadow: 0 0 20px 5px #000;
+    border-right: solid 1px #09202B;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    min-width: 500px;
+    z-index: 5;
+    border-radius: 20px;
+}
+
+:local(.runescapeInfoContainer:before), :local(.runescapeInfoContainer:after) {
+    background: transparent url('../../images/rsSprites.png') no-repeat 0 0;
+    content: '';
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    top: -25px;
+    z-index: 15;
+}
+
+:local(.runescapeInfoContainer:after) {
+    transform: scaleX(-1);
+    right: -20px;
+}
+
+:local(.runescapeInfoContainer:before) {
+    left: -20px;
+}
+
+:local(.runescapeLookup) {
+    position: relative;
+    height: 120px;
+    padding: 22px 19px;
+    border-radius: 4px;
+}
+
+:local(.runescapeLookup:before), :local(.runescapeLookup:after) {
+    content: '';
+    display: block;
+    background: transparent url('../../images/rsSprites.png') no-repeat 0 -80px;
+    width: 183px;
+    height: 163px;
+    position: absolute;
+    bottom: -3px;
+    left: -2px;
+    z-index: 1;
+}
+
+:local(.runescapeLookup:after) {
+    transform: scaleX(-1);
+    left: auto;
+    right: -2px;
+    bottom: -3px;
+}
+
+@media screen and (min-width: 600px){
+    :local(.generalInfoContainer) {
+        margin-bottom: 30px;
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    :local(.generalLookup) {
+        padding: 20px;
+    }
+
+    :local(.inlineInput) {
+        display: block;
+        width: 100%;
+    }
+
+    :local(.blockInput) {
+        display: block;
+        width: 100%;
+    }
+
+    :local(.runescapeInfoContainer) {
+        background-image: url('../../images/MarbledBackground.png');
+        color: #e1bb34;
+        box-shadow: 0 0 20px 5px #000;
+        border-right: solid 1px #09202B;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        min-width: 550px;
+        z-index: 5;
+        border-radius: 20px;
+    }
+
+    :local(.runescapeInfoContainer:before), :local(.runescapeInfoContainer:after) {
+        background: transparent url('../../images/rsSprites.png') no-repeat 0 0;
+        content: '';
+        width: 70px;
+        height: 80px;
+        position: absolute;
+        top: -25px;
+        z-index: 15;
+    }
+
+    :local(.runescapeInfoContainer:after) {
+        transform: scaleX(-1);
+        right: -20px;
+    }
+
+    :local(.runescapeInfoContainer:before) {
+        left: -20px;
+    }
+
+    :local(.runescapeLookup) {
+        position: relative;
+        height: 120px;
+        padding: 22px 19px;
+        border-radius: 4px;
+    }
+
+    :local(.runescapeLookup:before), :local(.runescapeLookup:after) {
+        content: '';
+        display: block;
+        background: transparent url('../../images/rsSprites.png') no-repeat 0 -80px;
+        width: 183px;
+        height: 163px;
+        position: absolute;
+        bottom: -3px;
+        left: -2px;
+        z-index: 1;
+    }
+
+    :local(.runescapeLookup:after) {
+        transform: scaleX(-1);
+        left: auto;
+        right: -2px;
+        bottom: -3px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.generalInfoContainer) {
+        margin-bottom: 30px;
+        background-color: #fff;
+        border: 1px solid transparent;
+        width: 100%;
+        min-width: 768px;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    :local(.generalLookup) {
+        padding: 20px;
+    }
+
+    :local(.inlineInput) {
+        display: inline-block;
+        float: left;
+        width: auto;
+    }
+
+    :local(.blockInput) {
+        display: block;
+        width: 100%;
+    }
+
+    :local(.runescapeInfoContainer) {
+        background-image: url('../../images/MarbledBackground.png');
+        color: #e1bb34;
+        box-shadow: 0 0 20px 5px #000;
+        border-right: solid 1px #09202B;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        min-width: 1250px;
+        z-index: 5;
+        border-radius: 20px;
+    }
+
+    :local(.runescapeInfoContainer:before), :local(.runescapeInfoContainer:after) {
+        background: transparent url('../../images/rsSprites.png') no-repeat 0 0;
+        content: '';
+        width: 70px;
+        height: 80px;
+        position: absolute;
+        top: -25px;
+        z-index: 15;
+    }
+
+    :local(.runescapeInfoContainer:after) {
+        transform: scaleX(-1);
+        right: -20px;
+    }
+
+    :local(.runescapeInfoContainer:before) {
+        left: -20px;
+    }
+
+    :local(.runescapeLookup) {
+        position: relative;
+        height: 120px;
+        padding: 22px 19px;
+        border-radius: 4px;
+    }
+
+    :local(.runescapeLookup:before), :local(.runescapeLookup:after) {
+        content: '';
+        display: block;
+        background: transparent url('../../images/rsSprites.png') no-repeat 0 -80px;
+        width: 183px;
+        height: 163px;
+        position: absolute;
+        bottom: -3px;
+        left: -2px;
+        z-index: 1;
+    }
+
+    :local(.runescapeLookup:after) {
+        transform: scaleX(-1);
+        left: auto;
+        right: -2px;
+        bottom: -3px;
+    }
+}
+

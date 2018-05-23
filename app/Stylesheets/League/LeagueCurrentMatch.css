@@ -1,0 +1,105 @@
+:local(.currentMatchContainer){
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    background: #363636;
+    border: 2px solid black;
+}
+
+:local(.blueTeam){
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: inline-block;
+    background: #0f7ccf;
+}
+
+:local(.redTeam){
+    width: 100%;
+    height: 10px;
+    display: inline-block;
+    background: #d7232a;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+:local(.matchHeader){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+    background: #0B0C10;
+}
+
+:local(.playersContainer){
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 50px;
+}
+
+:local(.matchTime){
+    display: inline-block;
+    float: right;
+    margin: 6px 20px;
+    padding: 4px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: white;
+    color: black;
+    font-weight: 700;
+}
+
+:local(.matchType){
+    display: inline-block;
+    color: #f1e6d0;
+    margin: 10px;
+    font-weight: 700;
+}
+
+:local(.blueTeamBans){
+    display: inline-block;
+}
+
+:local(.redTeamBans){
+    display: inline-block;
+    float: right;
+}
+
+:local(.banImage){
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+:local(.blueTeamLogo){
+    height: 30px;
+    padding-right: 10px;
+}
+
+:local(.redTeamLogo){
+    height: 30px;
+    padding-left: 15px;
+}
+
+:local(.bansLabel){
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 12px;
+    font-weight: 700;
+    margin-left: 364px;
+    color: #f1e6d0;
+}
+
+:local(.errorMessage){
+    width: 500px;
+    color: #c9aa71;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}

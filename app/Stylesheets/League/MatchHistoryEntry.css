@@ -1,0 +1,282 @@
+:local(.winEntry){
+    background: #31b03f;
+    display: inline-block;
+    width: 10px;
+    margin-top: -1px;
+    border: 1px solid #d8d7d7;
+}
+
+:local(.lossEntry){
+    background: #e23a3a;
+    display: inline-block;
+    width: 10px;
+    margin-top: -1px;
+    border: 1px solid #d8d7d7;
+}
+
+:local(.matchInfo){
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #d8d7d7;
+    border-right: 1px solid #d8d7d7;
+}
+
+:local(.firstMatchInfo){
+    display: inline-block;
+    width: calc(100% - 10px);
+    border-bottom: 1px solid #d8d7d7;
+    border-top: 1px solid #d8d7d7;
+    border-right: 1px solid #d8d7d7;
+    margin-top: -1px;
+}
+
+:local(.matchDiv){
+    display: flex;
+    min-width: 1425px;
+    width: 100%;
+    overflow: hidden;
+    height: 156px;
+}
+
+:local(.matchChamp){
+    height: 110px;
+    margin-left: 30px;
+    vertical-align: top;
+    margin-top: 23px;
+}
+
+:local(.summonerSpellsContainer){
+    padding-top: 29px;
+    padding-left: 5px;
+    display: inline-block;
+    height: 100px;
+    vertical-align: top;
+}
+
+:local(.summonerSpell){
+    display: table;
+    height: 40px;
+    margin: 3px 0 5px 3px;
+    border: 1px solid #c7993c;
+}
+
+:local(.mapContainer){
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    line-height: 23px;
+    min-width: 150px;
+    color: #c9aa71;
+    text-align: center;
+    height: 60px;
+    margin-top: 60px;
+}
+
+:local(.gameType){
+    color: #f1e6d0;
+}
+
+:local(.itemContainer){
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 33px;
+}
+
+:local(.itemDiv){
+    display: inline-block;
+    width: 153px;
+    position: relative;
+}
+
+:local(.itemImage){
+    display: inline-block;
+    margin: 0 3px;
+    height: 45px;
+    border-radius: 4px;
+}
+
+:local(.lastImage){
+    display: inline-block;
+    margin: 0 3px;
+    height: 45px;
+    position: absolute;
+    border-radius: 4px;
+    top: 24px;
+    right: -50px;
+}
+
+:local(.statDiv){
+    display: inline-block;
+    vertical-align: top;
+    margin: 45px 40px 45px 75px;
+    width: 13%;
+    min-width: 150px;
+}
+
+:local(.statCategory){
+    color: #c9aa71;
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+:local(.statCategory span){
+    color: #f1e6d0;
+    font-weight: normal;
+}
+
+:local(.kills){
+    color: #49b04f !important;
+    display: inline-block!important;
+    padding: 0 2px;
+}
+
+:local(.deaths){
+    color: #e2575c !important;
+    display: inline-block!important;
+    padding: 0 2px;
+}
+
+:local(.assists){
+    color: #2e91de !important;
+    display: inline-block!important;
+    padding: 0 2px;
+}
+
+:local(.loadingImage){
+    height: 50px;
+    margin-top: 53px;
+    margin-left: 50px;
+}
+
+:local(.dateDiv){
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    min-width: 150px;
+    margin-top: 64px;
+    color: #c9aa71;
+}
+
+:local(.dateDiv span){
+    display: block;
+    text-align: center;
+    line-height: 21px;
+}
+
+:local(.gameDate){
+    color: #f1e6d0;
+}
+
+:local(.runesDiv){
+    display: inline-block;
+    color: #c9aa71;
+    vertical-align: top;
+    margin-top: 70px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+:local(.runesDiv:after){
+    content: '';
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: block;
+    left: 0;
+    border-bottom: 1px solid #c9aa71;
+}
+
+:local(.playerContainer){
+    display: block;
+    color: #c9aa71;
+    height: 27px;
+    white-space: nowrap;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+:local(.playerChampion){
+    height: 22px;
+    border-radius: 4px;
+    display: inline;
+    vertical-align: bottom;
+}
+
+:local(.mainPlayerName){
+    color: #f1e6d0;
+    vertical-align: bottom;
+    padding-left: 5px;
+    display: inline;
+}
+
+:local(.playerName){
+    color: #c9aa71;
+    padding-left: 5px;
+    display: inline;
+}
+
+:local(.playersContainer){
+    display: inline-block;
+    margin-top: 12px;
+    width: 255px;
+}
+
+:local(.trioPlayersContainer){
+    display: inline-block;
+    margin-top: 30px;
+    width: 255px;
+}
+
+:local(.blueTeam), :local(.trioBlueTeam){
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+:local(.blueTeam:after){
+    content: '';
+    display: block;
+    position: absolute;
+    height: 120px;
+    border-left: 1px solid #4fa0de;
+    top: 5px;
+    left: -10px;
+}
+
+:local(.trioBlueTeam:after){
+    content: '';
+    display: block;
+    position: absolute;
+    height: 68px;
+    border-left: 1px solid #4fa0de;
+    top: 5px;
+    left: -10px;
+}
+
+:local(.redTeam), :local(.trioRedTeam){
+    display: inline-block;
+    position: relative;
+}
+
+:local(.redTeam:after){
+    content: '';
+    display: block;
+    position: absolute;
+    height: 120px;
+    border-left: 1px solid #e2676e;
+    top: 5px;
+    left: -10px;
+}
+
+:local(.trioRedTeam:after){
+    content: '';
+    display: block;
+    position: absolute;
+    height: 68px;
+    border-left: 1px solid #e2676e;
+    top: 5px;
+    left: -10px;
+}

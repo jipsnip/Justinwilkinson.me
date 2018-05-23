@@ -1,0 +1,47 @@
+:local(.increasingSort){
+    display: block;
+    border: 6px solid green;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    height: 0;
+    width: 0;
+    margin-bottom: 3px;
+}
+
+:local(.decreasingSort){
+    display: block;
+    border: 6px solid red;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    height: 0;
+    width: 0;
+    margin-top: 3px;
+}
+
+:local(.neutralSortBottom){
+    display: block;
+    border: 6px solid gray;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    height: 0;
+    width: 0;
+    margin-top: 3px;
+}
+
+:local(.neutralSortTop){
+    display: block;
+    border: 6px solid gray;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    height: 0;
+    width: 0;
+    margin-bottom: 3px;
+}
+
+:local(.sortButton){
+    padding: 0!important;
+}

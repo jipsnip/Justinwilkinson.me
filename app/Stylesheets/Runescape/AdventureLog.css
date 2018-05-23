@@ -1,0 +1,167 @@
+:local(.infoContainer) {
+    min-width: 470px;
+    width: calc(100% - 80px);
+    border-radius: 4px;
+    padding: 40px;
+    overflow: hidden;
+    box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    background-image: url('../../images/background.png');
+    color: white;
+}
+
+:local(.adventureLogEntry) {
+    height: 150px;
+    border-radius: 4px;
+    background-color: #2a343d;
+    border: 1px solid #2a343d;
+    border-top: none;
+    margin-bottom: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+:local(.adventureLogEntryRight) {
+    height: 150px;
+    border-radius: 4px;
+    background-color: #2a343d;
+    border: 1px solid #2a343d;
+    border-top: none;
+    margin-bottom: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+:local(.adventureLogHeader) {
+    background-color: #050f13;
+    padding: 10px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+:local(.adventureLogText) {
+    display: inline-block;
+}
+
+:local(.adventureLogDate) {
+    display: inline-block;
+    float: right;
+}
+
+:local(.adventureLogBody) {
+    padding-top: 15px;
+    padding-left: 3px;
+}
+
+@media screen and (min-width: 600px) {
+    :local(.infoContainer) {
+        min-width: 520px;
+        padding: 40px;
+        width: calc(100% - 80px);
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 25px;
+        box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        background-image: url('../../images/background.png');
+        color: white;
+    }
+
+    :local(.adventureLogEntry) {
+        height: 150px;
+        border-radius: 4px;
+        background-color: #2a343d;
+        border: 1px solid #2a343d;
+        border-top: none;
+        margin-bottom: 20px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    :local(.adventureLogEntryRight) {
+        height: 150px;
+        border-radius: 4px;
+        background-color: #2a343d;
+        border: 1px solid #2a343d;
+        border-top: none;
+        margin-bottom: 20px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    :local(.adventureLogHeader) {
+        background-color: #050f13;
+        padding: 10px;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    :local(.adventureLogText) {
+        display: inline-block;
+    }
+
+    :local(.adventureLogDate) {
+        display: inline-block;
+        float: right;
+    }
+
+    :local(.adventureLogBody) {
+        padding-top: 15px;
+        padding-left: 3px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.infoContainer) {
+        min-width: 1270px;
+        padding: 40px;
+        border-radius: 4px;
+        overflow: auto;
+        margin-bottom: 150px;
+        box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        background-image: url('../../images/background.png');
+        color: white;
+    }
+
+    :local(.adventureLogEntry) {
+        height: 150px;
+        border-radius: 4px;
+        background-color: #2a343d;
+        border: 1px solid #2a343d;
+        border-top: none;
+        margin-bottom: 20px;
+        width: 48%;
+        display: inline-block;
+    }
+
+    :local(.adventureLogEntryRight) {
+        height: 150px;
+        border-radius: 4px;
+        background-color: #2a343d;
+        border: 1px solid #2a343d;
+        border-top: none;
+        margin-bottom: 20px;
+        width: 48%;
+        display: inline-block;
+        float: right;
+    }
+
+    :local(.adventureLogHeader) {
+        background-color: #050f13;
+        padding: 10px;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    :local(.adventureLogText) {
+        display: inline-block;
+    }
+
+    :local(.adventureLogDate) {
+        display: inline-block;
+        float: right;
+    }
+
+    :local(.adventureLogBody) {
+        padding-top: 15px;
+        padding-left: 3px;
+    }
+}

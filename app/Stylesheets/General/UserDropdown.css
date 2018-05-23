@@ -1,0 +1,243 @@
+:local(.userDropdownContainer){
+    display: inline-block;
+    cursor: pointer;
+    border-right: 1px solid #39444b;
+    border-left: 1px solid black;
+    color: #e1bb34;
+    font-size: 1.15rem;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    height: 59px;
+    z-index: 1001;
+}
+
+:local(.twitchUserDropdownContainer){
+    display: inline-block;
+    cursor: pointer;
+    border-right: 1px solid #39444b;
+    border-left: 1px solid black;
+    color: #b19dd8;
+    border-left: 1px solid #b19dd8;
+    border-right: 1px solid #b19dd8;
+    font-size: 1.15rem;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    height: 52px;
+    z-index: 1001;
+    font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+    font-weight: 700;
+}
+
+:local(.leagueUserDropdownContainer){
+    display: inline-block;
+    cursor: pointer;
+    color: #c9aa71;
+    font-family: "BeaufortLoL", "Times New Roman", "serif";
+    font-size: 1.15rem;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    height: 54px;
+    z-index: 1001;
+    font-weight: 700;
+}
+
+:local(.leagueUserDropdownContainer:before){
+    content: '';
+    display: block;
+    height: 20px;
+    width: 1px;
+    position: absolute;
+    top: 19px;
+    background-color: #c9aa71;
+}
+
+:local(.expandedUsernameDiv){
+    color: #fff2c5;
+    background: transparent
+    url('../../images/navigationItemHovered.png') no-repeat
+    0 0;
+    box-shadow: inset 0 0 8px 3px black;
+    border-left: 1px solid #39444b;
+    border-right: 1px solid black;
+    padding: 19px;
+    max-width: 74px;
+}
+
+:local(.twitchExpandedUsernameDiv){
+    color: #FFFFFF;
+    text-decoration: underline;
+    padding: 19px;
+    max-width: 85px;
+}
+
+:local(.leagueExpandedUsernameDiv){
+    color: #f1e6d0;
+    padding: 19px;
+    max-width: 85px;
+}
+
+:local(.usernameDiv){
+    border-left: 1px solid #39444b;
+    border-right: 1px solid black;
+    padding: 19px;
+    max-width: 74px;
+}
+
+:local(.twitchUsernameDiv){
+    color: #FFFFFF;
+    padding: 19px;
+    max-width: 85px;
+}
+
+:local(.leagueUsernameDiv){
+    color: #c9aa71;
+    padding: 19px;
+    max-width: 85px;
+}
+
+:local(.dropdown){
+    border-color: #e1bb34 transparent transparent transparent;
+    border-style: solid;
+    content: '';
+    border-width: 6px 5px;
+    margin-left: 9px;
+    display: inline-block;
+    vertical-align: bottom;
+    z-index: 1002;
+}
+
+:local(.twitchDropdown){
+    border-color: #b19dd8 transparent transparent transparent;
+    border-style: solid;
+    content: '';
+    border-width: 6px 5px;
+    margin-left: 9px;
+    display: inline-block;
+    vertical-align: bottom;
+    z-index: 1002;
+}
+
+:local(.leagueDropdown){
+    border-color: #c9aa71 transparent transparent transparent;
+    border-style: solid;
+    content: '';
+    border-width: 6px 5px;
+    margin-left: 9px;
+    display: inline-block;
+    vertical-align: bottom;
+    z-index: 1002;
+}
+
+:local(.expandedDropdown){
+    border-color: #fff2c5 transparent transparent transparent;
+    border-style: solid;
+    content: '';
+    border-width: 6px 5px;
+    margin-left: 9px;
+    display: inline-block;
+    vertical-align: bottom;
+    z-index: 1002;
+}
+
+:local(.twitchExpandedDropdown){
+    border-color: #ffffff transparent transparent transparent;
+    border-style: solid;
+    content: '';
+    border-width: 6px 5px;
+    margin-left: 9px;
+    display: inline-block;
+    vertical-align: bottom;
+    z-index: 1002;
+}
+
+:local(.leagueExpandedDropdown){
+    border-color: #f1e6d0 transparent transparent transparent;
+    border-style: solid;
+    content: '';
+    border-width: 6px 5px;
+    margin-left: 9px;
+    display: inline-block;
+    vertical-align: bottom;
+    z-index: 1002;
+}
+
+:local(.optionList){
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+:local(.optionList li){
+    padding: 8px 19px;
+    margin: 0;
+    background: transparent
+    url('../../images/navigationItemHovered.png') no-repeat
+    0 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: 1px solid #39444b;
+    position: absolute;
+    width: 100px;
+    top: 59px;
+    right: 0;
+    color: #d7dbe1;
+}
+
+:local(.optionList li:hover){
+    color: #e1bb34;
+}
+
+
+:local(.twitchOptionList){
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+:local(.twitchOptionList li){
+    padding: 8px 19px;
+    margin: 0;
+    background: #201c2b;
+    border: solid #b19dd8;
+    border-width: 1px 1px 1px 2px;
+    position: absolute;
+    width: 100px;
+    top: 52px;
+    right: 0;
+    color: #FFFFFF;
+}
+
+:local(.twitchOptionList li:hover){
+    color: #FFFFFF;
+    background: #b19dd8;
+}
+
+:local(.leagueOptionList){
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+:local(.leagueOptionList li){
+    padding: 8px 19px;
+    margin: 0;
+    background: #121212;
+    border: 1px solid #262626;
+    position: absolute;
+    width: 100px;
+    top: 54px;
+    right: 0;
+    color: #c9aa71;
+}
+
+:local(.leagueOptionList li:hover){
+    color: #f1e6d0;
+}

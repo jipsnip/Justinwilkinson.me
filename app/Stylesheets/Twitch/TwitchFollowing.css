@@ -1,0 +1,107 @@
+@media screen and (max-width: 599px){
+    :local(.minimizedFollowContainer), :local(.followContainer) {
+        width: 37px;
+        height: 37px;
+        padding: 8.5px;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    :local(.minimizedFollowImage), :local(.followImage) {
+        height: 35px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    :local(.minimizedFollowImage:hover), :local(.followImage:hover) {
+        border: 2px solid #b19dd8;
+        border-radius: 8px;
+        margin: -2px 0 0 -2px;
+    }
+
+    :local(.followName) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px){
+
+    :local(.minimizedFollowContainer), :local(.followContainer) {
+        width: 37px;
+        height: 37px;
+        padding: 8.5px;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    :local(.minimizedFollowImage), :local(.followImage) {
+        height: 35px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    :local(.minimizedFollowImage:hover), :local(.followImage:hover) {
+        border: 2px solid #b19dd8;
+        border-radius: 8px;
+        margin: -2px 0 0 -2px;
+    }
+
+    :local(.followName) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.followContainer) {
+        padding: 4px 0 0 16px;
+        cursor: pointer;
+        height: 48px;
+        width: 224px;
+        overflow: hidden;
+        transition: width 1s ease-in-out, padding 1s ease-in-out, height 1s ease-in-out;
+    }
+
+    :local(.followContainer:hover) {
+        background: #b19dd8;
+        border-radius: 8px;
+        height: 48px;
+        width: 224px;
+        overflow: hidden;
+    }
+
+    :local(.minimizedFollowContainer) {
+        width: 37px;
+        height: 37px;
+        padding: 6.5px;
+        overflow: hidden;
+        transition: width 1s ease-in-out, padding 1s ease-in-out, height 1s ease-in-out;
+    }
+
+    :local(.followImage) {
+        height: 40px;
+        border-radius: 8px;
+        padding-top: 3px;
+        transition: height 1s ease-in-out;
+    }
+
+    :local(.minimizedFollowImage) {
+        height: 35px;
+        border-radius: 8px;
+        transition: height 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    :local(.minimizedFollowImage:hover) {
+        border: 2px solid #b19dd8;
+        border-radius: 8px;
+        margin: -2px 0 0 -2px;
+    }
+
+    :local(.followName) {
+        color: #FFFFFF;
+        display: inline-block;
+        vertical-align: top;
+        padding: 15px 0 0 18px;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    }
+}

@@ -1,0 +1,227 @@
+@media screen and (max-width: 599px) {
+    :local(.leagueSubNavBar) {
+        padding-left: 125px;
+        background: #262626;
+        height: 60px;
+        padding-bottom: 5px;
+        transition: padding 1s ease-in-out;
+        width: calc(100% - 125px);
+        min-width: 425px;
+        overflow: hidden;
+    }
+
+    :local(.expandedLeagueSubNavBar) {
+        padding-left: 33px;
+        background: #262626;
+        height: 60px;
+        padding-bottom: 5px;
+        transition: padding 1s ease-in-out;
+    }
+
+    :local(.leagueSubNavList) {
+        height: 60px;
+        margin: 0 auto;
+        background-color: #262626;
+        float: left;
+        padding: 0;
+        z-index: 50;
+        border-bottom: 1px solid transparent;
+        position: relative;
+    }
+
+    :local(.leagueSubNavList:after) {
+        content: "";
+        height: 60px;
+        width: 4000px;
+        border-left: 1px solid #100e0e;
+        position: absolute;
+        top: 0;
+        background: #1e1d1d;
+        left: 100%;
+        box-shadow: 0 5px 9px black;
+    }
+
+    :local(.inactiveNavItem) {
+        display: flex;
+        color: #c9aa71;
+        margin: auto;
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #121212;
+        border-left: 1px solid #100e0e;
+        height: 60px;
+        background: #1e1d1d;
+        cursor: pointer;
+        box-shadow: 0 5px 9px black;
+    }
+
+    :local(.activeNavItem) {
+        display: flex;
+        color: #f1e6d0;
+        margin: auto;
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #121212;
+        border-left: 1px solid #100f0f;
+        height: 60px;
+        cursor: pointer;
+        box-shadow: inset -4px 4px 5px black;
+    }
+
+    :local(.leagueSubNavList a) {
+        line-height: 60px;
+        padding: 0 33px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    :local(.leagueSubNavBar) {
+        padding-left: 325px;
+        background: #262626;
+        height: 60px;
+        padding-bottom: 5px;
+        transition: padding 1s ease-in-out;
+        width: calc(100% - 325px);
+        min-width: 325px;
+        overflow: hidden;
+    }
+
+    :local(.expandedLeagueSubNavBar) {
+        padding-left: 33px;
+        background: #262626;
+        height: 60px;
+        padding-bottom: 5px;
+        transition: padding 1s ease-in-out;
+    }
+
+    :local(.leagueSubNavList) {
+        height: 60px;
+        margin: 0 auto;
+        background-color: #262626;
+        float: left;
+        padding: 0;
+        z-index: 50;
+        border-bottom: 1px solid transparent;
+        position: relative;
+    }
+
+    :local(.leagueSubNavList:after) {
+        content: "";
+        height: 60px;
+        width: 4000px;
+        border-left: 1px solid #100e0e;
+        position: absolute;
+        top: 0;
+        background: #1e1d1d;
+        left: 100%;
+        box-shadow: 0 5px 9px black;
+    }
+
+    :local(.inactiveNavItem) {
+        display: flex;
+        color: #c9aa71;
+        margin: auto;
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #121212;
+        border-left: 1px solid #100e0e;
+        height: 60px;
+        background: #1e1d1d;
+        cursor: pointer;
+        box-shadow: 0 5px 9px black;
+    }
+
+    :local(.activeNavItem) {
+        display: flex;
+        color: #f1e6d0;
+        margin: auto;
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #121212;
+        border-left: 1px solid #100f0f;
+        height: 60px;
+        cursor: pointer;
+        box-shadow: inset -4px 4px 5px black;
+    }
+
+    :local(.leagueSubNavList a) {
+        line-height: 60px;
+        padding: 0 33px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :local(.leagueSubNavBar) {
+        padding-left: 325px;
+        background: #262626;
+        height: 60px;
+        padding-bottom: 5px;
+        transition: padding 1s ease-in-out;
+        width: calc(100% - 325px);
+        min-width: 1424px;
+        overflow: hidden;
+    }
+
+    :local(.expandedLeagueSubNavBar) {
+        padding-left: 33px;
+        background: #262626;
+        height: 60px;
+        padding-bottom: 5px;
+        transition: padding 1s ease-in-out;
+    }
+
+    :local(.leagueSubNavList) {
+        height: 60px;
+        margin: 0 auto;
+        background-color: #262626;
+        float: left;
+        padding: 0;
+        z-index: 50;
+        border-bottom: 1px solid transparent;
+        position: relative;
+    }
+
+    :local(.leagueSubNavList:after) {
+        content: "";
+        height: 60px;
+        width: 4000px;
+        border-left: 1px solid #100e0e;
+        position: absolute;
+        top: 0;
+        background: #1e1d1d;
+        left: 100%;
+        box-shadow: 0 5px 9px black;
+    }
+
+    :local(.inactiveNavItem) {
+        display: flex;
+        color: #c9aa71;
+        margin: auto;
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #121212;
+        border-left: 1px solid #100e0e;
+        height: 60px;
+        background: #1e1d1d;
+        cursor: pointer;
+        box-shadow: 0 5px 9px black;
+    }
+
+    :local(.activeNavItem) {
+        display: flex;
+        color: #f1e6d0;
+        margin: auto;
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #121212;
+        border-left: 1px solid #100f0f;
+        height: 60px;
+        cursor: pointer;
+        box-shadow: inset -4px 4px 5px black;
+    }
+
+    :local(.leagueSubNavList a) {
+        line-height: 60px;
+        padding: 0 33px;
+    }
+}
